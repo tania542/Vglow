@@ -5,116 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>V.GLOW</title>
     <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <!-- Encabezado -->
     <header>
-        <div>
-            <a href="index.html">
+        <nav>
+            <a href="index.html" class="logo">
                 <img src="img/logo.png" alt="logo">
-                <h1>v.glow</h1>
+                <h1>Vglow</h1>
             </a>
-            <form action="#" method="get">
+            <form action="#" method="get" class="buscar">
                 <input type="text" name="search" placeholder="Escribe tu búsqueda...">
-                <button type="submit">Buscar</button>
+                <button type="submit">
+                    <img src="img/lupa.png" alt="Buscar" style="width: 30px; height: 30px;">
+                </button>
             </form>
-            <img src="img/carrito.png" alt="carrito">
-            <img src="img/usuario.png" alt="usuario">
-        </div>
+            <div class="icons">
+                <img src="img/carrito.png" alt="carrito">
+                <img src="img/usuario.png" alt="usuario">
+            </div>
+        </nav>
     </header>
 
     <!-- Contenido principal -->
     <main>
         <!-- Carrusel -->
-        <section>
-            <div>
-                <img src="img/carrusel1.JPG" alt="foto1">
-                <img src="img/carrusel2.JPG" alt="foto2">
+        <section class="carousel">
+            <div class="carousel-imagenes">
+                <img src="img/carrusel2.JPG" alt="foto1">
+                <img src="img/carrusel1.JPG" alt="foto2">
                 <img src="img/carrusel3.JPG" alt="foto3">
             </div>
-            <button>❮</button>
-            <button>❯</button>
+            <button class="carousel-btn prev">❮</button>
+            <button class="carousel-btn next">❯</button>
         </section>
 
         <!-- Mensaje principal -->
-        <h2>NO TESTEAMOS EN ANIMALES</h2>
+        <h2 class="animales">NO TESTEAMOS EN ANIMALES</h2>
 
         <!-- Categorías -->
-        <section>
-            <h2>ELIGE UNA CATEGORÍA</h2>
-            <div>
+        <section class="categorias">
+            <h2>Elige una categoría</h2>
+            <div class="categoria-lista">
+              <button class="cat-btn prev">❮</button>
+          
+              <div class="categorias-contenedor">
                 <a href="labios.html">
-                    <img src="img/labios.png" alt="labios">
-                    <h4>LABIOS</h4>
+                  <img src="img/labios.png" alt="Labios">
+                  <h4>Labios</h4>
                 </a>
-            </div>
-            <div>
                 <a href="ojos.html">
-                    <img src="img/ojos.png" alt="ojos">
-                    <h4>OJOS</h4>
+                  <img src="img/ojos.png" alt="Ojos">
+                  <h4>Ojos</h4>
                 </a>
-            </div>
-            <div>
                 <a href="cejas.html">
-                    <img src="img/cejas.png" alt="cejas">
-                    <h4>CEJAS</h4>
+                  <img src="img/cejas.png" alt="Cejas">
+                  <h4>Cejas</h4>
                 </a>
-            </div>
-            <div>
                 <a href="accesorios.html">
-                    <img src="img/accesorios.png" alt="accesorios">
-                    <h4>ACCESORIOS</h4>
+                  <img src="img/accesorios.png" alt="Accesorios">
+                  <h4>Accesorios</h4>
                 </a>
-            </div>
-            <div>
                 <a href="skincare.html">
-                    <img src="img/skin_care.png" alt="skin_care">
-                    <h4>SKIN CARE</h4>
+                  <img src="img/skin_care.png" alt="Skin Care">
+                  <h4>Skin Care</h4>
                 </a>
-            </div>
-            <div>
                 <a href="brochas.html">
-                    <img src="img/brochas.png" alt="brochas">
-                    <h4>BROCHAS</h4>
+                  <img src="img/brochas.png" alt="Brochas">
+                  <h4>Brochas</h4>
                 </a>
-            </div>
-            <div>
-                <a href=""></a>
-                    <img src="img/cuidado corporal.png" alt="cuidado">
-                    <h4>CUIDADO CORPORAL</h4>
+                <a href="#">
+                  <img src="img/cuidado corporal.png" alt="Cuidado Corporal">
+                  <h4>Cuidado Corporal</h4>
                 </a>
+              </div>
+          
+              <button class="cat-btn next">❯</button>
             </div>
-            <button>❮</button>
-            <button>❯</button>
-        </section>
+          </section>
+          
 
         <!-- Productos más vendidos -->
-        <section>
-            <h2>LO MÁS VENDIDO</h2>
-            <div>
-                <img src="img/imagen1.png" alt="VITAMINA">
+        <section class="mas-vendido">
+            <h2>Lo más vendido</h2>
+            <div class="productos">
+              <div class="producto">
+                <img src="img/imagen1.png" alt="Vitamina C Bioaqua">
                 <h3>Vitamina C Bioaqua</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <div>
-                    <button>-</button>
-                    <span>1</span>
-                    <button>+</button>
-                    <img src="img/carrito.png" alt="carrito">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <div class="cantidad">
+                  <button>-</button>
+                  <span>1</span>
+                  <button>+</button>
+                  <img src="img/carrito.png" alt="carrito">
                 </div>
-            </div>
-            <div>
-                <img src="img/imagen2.jpg" alt="TINTA MELU">
+              </div>
+          
+              <div class="producto">
+                <img src="img/imagen2.jpg" alt="Tinta Melu">
                 <h3>Tinta Melu</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <div>
-                    <button>-</button>
-                    <span>1</span>
-                    <button>+</button>
-                    <img src="img/carrito.png" alt="carrito">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <div class="cantidad">
+                  <button>-</button>
+                  <span>1</span>
+                  <button>+</button>
+                  <img src="img/carrito.png" alt="carrito">
                 </div>
+              </div>
             </div>
-        </section>
+          </section>
+          
 
         <a href="contacto.html">
             <img src="img/contacto.png" alt="contacto">

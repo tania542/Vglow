@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Chau Philomene One", sans-serif;
+    font-weight: 400px;
+    font-style: italic;
+    background-color: rgb(252, 216, 255);
+}
+
+/*Navegación*/
+
+header {
+    
+    width: 100%;
+    padding: 25px;
+    position: fixed;
+    background-color: #e4bdff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 9999;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.logo h1{
+    font-size: 2rem;
+}
+
+/*Busqueda*/
+main {
+    padding-top: calc(70px + 2 * 25px); /* imagen de 70px + padding arriba/abajo */
+  }
+  
+
+.buscar {
+    display: flex;
+    flex: 1;
+    max-width: 400px;
+    margin-right: 500px;
+}
+
+.buscar input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #a74caf;
+    box-shadow: 0 0 5px #a74caf;
+}
+
+.buscar button {
+    padding: 5px;
+    border: none;
+    background-color: #e4bdff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*Iconos*/
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icons img {
+    width: 60px;
+    height: 55px;
+    cursor: pointer;
+}
+
+/*Carrusel*/
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.carousel-imagenes {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-imagenes img {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+    max-height: 450px;
+    object-fit: cover;
+    
+}
+
+/*Botones carrusel*/
+.carousel-btn{
+    position: absolute;
+    top: 40%;
+    transition: transform 0.3s ease;
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+    padding: 5px 12px;
+    cursor: pointer;
+    color: #7d7c7c;
+    z-index: 2;
+}
+
+.carousel-btn:hover {
+    transform: scale(1.05);
+}
+
+.carousel-btn.prev {
+    left: 15px;
+}
+
+.carousel-btn.next {
+    right: 15px;
+}
+
+/*Mensaje no testamos en animales*/
+.animales{
+    background-image: url(img/fondoAnimales.png);
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    padding: 35px;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/*Categorias*/
+ .categorias{
+    padding: 40px 20px;
+    text-align: center;
+ }
+
+ .categoria-lista {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+ }
+
+ .categorias-contenedor {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+ }
+
+ .categorias-contenedor a{
+    flex: 0 0 auto;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+ }
+
+ .categorias-contenedor img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 8px;
+ }
+
+ .categorias-contenedor h4 {
+    font-size: 1rem;
+ }
+
+ /*Botonces Categoria*/
+
+ .cat-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0 15px;
+    color: #a74caf;
+ }
+
+/* Responsivo Header*/
+@media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .buscar {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .icons {
+      margin-top: 10px;
+    }
+  }
+
+  /* Responsivo Carrusel y no testear*/
+
+  /* Tablets */
+@media (max-width: 992px) {
+    .carousel-imagenes img {
+      max-height: 350px;
+    }
+  
+    .animales {
+      font-size: 1.6rem;
+      padding: 16px;
+    }
+  
+    .carousel-btn {
+      font-size: 2rem;
+      padding: 5px 10px;
+    }
+  
+  }
+  
+  /* Móviles */
+  @media (max-width: 600px) {
+    .carousel-imagenes img {
+      max-height: 250px;
+    }
+  
+    .animales {
+      font-size: 1.2rem;
+      padding: 12px;
+    }
+  
+    .carousel-btn {
+      font-size: 1.5rem;
+      padding: 5px 8px;
+    }
+  }
