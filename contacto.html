@@ -3,43 +3,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesContacto.css">
 </head>
 <body>
     <!-- Encabezado -->
     <header>
-        <div>
-            <a href="index.html">
+        <nav>
+            <a href="index.html" class="logo">
                 <img src="img/logo.png" alt="logo">
-                <h1>v.glow</h1>
+                <h1>Vglow</h1>
             </a>
-            <form action="#" method="get">
+            <form action="#" method="get" class="buscar">
                 <input type="text" name="search" placeholder="Escribe tu búsqueda...">
-                <button type="submit">Buscar</button>
+                <button type="submit">
+                    <img src="img/lupa.png" alt="Buscar" style="width: 30px; height: 30px;">
+                </button>
             </form>
-            <img src="img/carrito.png" alt="carrito">
-            <img src="img/usuario.png" alt="usuario">
-        </div>
-    </header>
+            <div class="icons">
+                <img src="img/carrito.png" alt="carrito">
+                <img src="img/usuario.png" alt="usuario">
+            </div>
+        </nav>
     </header>
 
-    <section>
+    <section class="contact-form">
         <h1>Contáctanos</h1>
         <form>
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="phone">Número de Contacto:</label>
-            <input type="tel" id="phone" name="phone" required>
-            
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">¿En qué te podemos ayudar?</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            
-            <button type="submit">📩 Enviar</button>
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="phone">Número de Contacto:</label>
+          <input type="tel" id="phone" name="phone" required>
+          
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="message">¿En qué te podemos ayudar?</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          
+          <button type="submit" class="form-btn">
+            <img src="img/enviar.png" alt="Enviar" class="btn-icon">
+            Enviar
+          </button>
         </form>
-    </section>
+      </section>
 
+    <a href="contacto.html" class="btn-contacto">
+        <img src="img/contacto.png" alt="contacto">
+    </a>   
+
+<!-- Pie de página -->
+<footer>
+    <p>&copy; 2025 v.glow. Todos los derechos reservados.</p>
+</footer>
 </body>
+
 </html>
