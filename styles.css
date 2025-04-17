@@ -11,17 +11,18 @@ body {
     font-weight: 400px;
     font-style: italic;
     background-color: rgb(252, 216, 255);
+    padding-top: 40px;
 }
 
 /*Navegación*/
 
 header {
-    
     width: 100%;
+    top: 0;
+    left: 0;
     padding: 25px;
     position: fixed;
     background-color: #e4bdff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     z-index: 9999;
 }
 
@@ -51,7 +52,7 @@ nav {
 
 /*Busqueda*/
 main {
-    padding-top: calc(70px + 2 * 25px); /* imagen de 70px + padding arriba/abajo */
+  margin-top: 120px;
   }
   
 
@@ -101,9 +102,9 @@ input:focus {
 .carousel {
     position: relative;
     overflow: hidden;
-    width: 100%;
     max-width: 800px;
-    margin: 20px auto;
+    margin: 10px auto;
+    z-index: 1;
 }
 
 .carousel-imagenes {
@@ -114,10 +115,8 @@ input:focus {
 .carousel-imagenes img {
     width: 100%;
     flex-shrink: 0;
-    object-fit: cover;
+    object-fit: contain;
     max-height: 450px;
-    object-fit: cover;
-    
 }
 
 /*Botones carrusel*/
@@ -130,7 +129,7 @@ input:focus {
     font-size: 3rem;
     padding: 5px 12px;
     cursor: pointer;
-    color: #7d7c7c;
+    color: #a3a3a3;
     z-index: 2;
 }
 
@@ -157,12 +156,20 @@ input:focus {
     font-weight: bold;
     letter-spacing: 2px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-top: 20px;
 }
 
 /*Categorias*/
  .categorias{
-    padding: 40px 20px;
+    padding: 10px 20px;
     text-align: center;
+    width: 100%;
+    margin-top: 20px;
+ }
+ .categorias h2 {
+    color: #a782a4;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
  }
 
  .categoria-lista {
@@ -170,14 +177,20 @@ input:focus {
     align-items: center;
     overflow: hidden;
     position: relative;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 20px 10px;
  }
 
  .categorias-contenedor {
     display: flex;
     gap: 20px;
-    overflow-x: auto;
     scroll-behavior: smooth;
     padding: 10px 0;
+    flex: 1;
+    overflow: auto;
  }
 
  .categorias-contenedor a{
@@ -185,13 +198,13 @@ input:focus {
     text-align: center;
     text-decoration: none;
     color: #333;
+    min-width: 90px;
  }
 
  .categorias-contenedor img {
-    width: 70px;
-    height: 70px;
+    width: 140px;
+    height: 140px;
     object-fit: contain;
-    margin-bottom: 8px;
  }
 
  .categorias-contenedor h4 {
@@ -209,27 +222,142 @@ input:focus {
     color: #a74caf;
  }
 
-/* Responsivo Header*/
-@media (max-width: 768px) {
-    nav {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .buscar {
-      width: 100%;
-      margin: 10px 0;
-    }
-  
-    .icons {
-      margin-top: 10px;
-    }
-  }
+ /*Lo más vendido*/
 
-  /* Responsivo Carrusel y no testear*/
+ .mas-vendido {
+  padding: 20px 0px;
+  text-align: center;
+ }
 
-  /* Tablets */
+ .mas-vendido h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  background-color: #e4bdff;
+  padding: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+ .productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  max-width: 80%;
+  margin: 0 auto 30px;
+ }
+
+ .producto {
+  background: #fff;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+ }
+
+ .producto img.producto-imagen {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+/* Icono del carrito */
+.cantidad img.carrito-icono {
+  width: 35px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+ .producto h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+ }
+
+ .producto p {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  text-align: center;
+ }
+
+ .cantidad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+ }
+
+ .cantidad button {
+  background-color: #a74caf;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 50%;
+  font-size: 1rem;
+  cursor: pointer;
+ }
+
+ .cantidad span {
+  font-size: 1.1rem;
+  width: 25px;
+  text-align: center;
+}
+
+ .cantidad img {
+  width: 35px;
+  cursor: pointer;
+  color: #a74caf;
+  margin-top: 15px;
+ }
+
+ /*Contacto*/
+
+ .btn-contacto {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s, background-color 0.3s;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .btn-contacto img {
+    width: 50px;
+    height: 50px;
+ }
+
+ .btn-contacto:hover{
+    background-color: #e4bdff;
+    transform: scale(1.1);
+ }
+
+ footer {
+  background-color: #e4bdff;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 15px;
+ }
+
+ footer p {
+  margin: p;
+ }
+
+/* Responsivo*/
+
 @media (max-width: 992px) {
+  
+    body {
+      padding-top: 110px;
+    }
+
     .carousel-imagenes img {
       max-height: 350px;
     }
@@ -243,22 +371,82 @@ input:focus {
       font-size: 2rem;
       padding: 5px 10px;
     }
-  
+
+    .productos {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+ /* En pantallas grandes: desactivar scroll y ajustar ancho */
+@media (min-width: 993px) {
+  .categorias-contenedor {
+    overflow-x: visible;
+    justify-content: center;
+    flex-wrap: wrap;
   }
-  
-  /* Móviles */
-  @media (max-width: 600px) {
-    .carousel-imagenes img {
-      max-height: 250px;
-    }
-  
-    .animales {
-      font-size: 1.2rem;
-      padding: 12px;
-    }
-  
-    .carousel-btn {
-      font-size: 1.5rem;
-      padding: 5px 8px;
-    }
+}
+
+  /* Pantallas pequeñas */
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
   }
+
+  .buscar {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .icons {
+    margin-top: 10px;
+  }
+
+  .carousel-imagenes img {
+    max-height: 250px;
+  }
+
+  .animales {
+    font-size: 1.2rem;
+    padding: 12px;
+  }
+
+  .carousel-btn {
+    font-size: 1.5rem;
+    padding: 5px 8px;
+  }
+
+  .productos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .categoria-lista {
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+
+  .categorias-contenedor {
+    flex-wrap: nowrap;
+  }
+
+  .categorias-contenedor a {
+    min-width: 120px;
+  }
+
+  .cat-btn {
+    display: none;
+  }
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+  body {
+    padding-top: 90px;
+  }
+
+  .productos {
+    grid-template-columns: 1fr;
+  }
+}
