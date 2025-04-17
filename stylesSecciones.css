@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Chau Philomene One", sans-serif;
+  font-style: italic;
+}
+
+header {
+  width: 100%;
+  padding: 10px;
+  position: fixed;
+  background: #e9cbe0;
+  z-index: 9999;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 2rem;
+}
+
+.buscar {
+  display: flex;
+  flex: 1;
+  max-width: 400px;
+  margin-right: 500px;
+}
+
+.buscar input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #9b4caf;
+  box-shadow: 0 0 5px #a74caf;
+}
+
+.buscar button {
+  padding: 0;
+  border: none;
+  background-color: #e4bdff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/*Iconos*/
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icons img {
+  width: 60px;
+  height: 55px;
+  cursor: pointer;
+}
+
+/*menu*/
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 5px 20px;
+  background-color: #e0b8d4;
+  font-weight: normal;
+  position: sticky;
+  top: 80px;
+  /* Debajo del header fijo */
+  z-index: 999;
+}
+
+.menu a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.menu a:hover {
+  background-color: #d78ca6;
+}
+
+.productos-cejas {
+  text-align: center;
+  padding: 100px 20px 20px;
+  background-color: #ffe4f2;
+  font-size: 2.5rem;
+  color: #d78ca6;
+
+}
+
+
+.contenedor-productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding: 20px;
+}
+.enlace-tarjeta {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.enlace-tarjeta img {
+  display: block;
+  width: 100%; /* o lo que necesites */
+  height: auto;
+}
+
+.tarjeta-producto {
+  display: flex;
+  background-color: #fff4f9;
+  border-radius: 15px;
+  padding: 20px;
+  gap: 20px;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(244, 182, 222, 0.3);
+  width: 45%;
+  min-width: 300px;
+}
+
+.imagen-cejas1 {
+  background-color: #e8cfe6;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen-cejas1 img {
+  width: 200px;
+  height: auto;
+}
+
+.info-producto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.info-producto h2 {
+  font-size: 1.8rem;
+  color: #000;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.info-producto p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+
+
+.cantidad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+.cantidad button {
+  padding: 10px 1px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #fff0f7;
+  cursor: pointer;
+}
+
+.cantidad input[type="number"] {
+  width: 25px;
+  padding: 1px 1px;
+  margin: 10px 0;
+  background-color: #fff0f7;
+  border: none;
+  text-align: right;
+  font-size: 1rem;
+
+}
+
+.boton-carrito button {
+  background-color: #d78ca6;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.boton-carrito img {
+  width: 20px;
+  height: 20px;
+}
+
+.enlace-tarjeta {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
