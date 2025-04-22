@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=Dancing+Script:wght@400..700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0;/*eliminar la margen por defecto*/
+    padding: 0;/**/
+    box-sizing: border-box;/**/
 }
 body {
     font-family: "Chau Philomene One", sans-serif;
     font-style: italic;
   }
-
+/*encabezado*/
   header {
     width: 100%;
     padding: 10px;
@@ -17,38 +17,38 @@ body {
     background: #e9cbe0;
     z-index: 9999;
 }
-
+/*seccion de navegacion*/
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
+/*logo marca*/
 .logo {
     display: flex;
     align-items: center;
     text-decoration: none;
     color: #333;
 }
-
+/*tamaño  logo marca  imagen*/
 .logo img {
     width: 70px;
     height: 70px;
     margin-right: 10px;
 }
-
+/*texto del lado*/
 .logo h1{
     font-size: 2rem;
 }
-
+/**/
 .buscar {
     display: flex;
     flex: 1;
     max-width: 400px;
-    margin-right: 500px;
+    margin: 0 auto;
 }
-
+/*texto barra buscar*/
 .buscar input {
     flex: 1;
     padding: 8px 12px;
@@ -57,11 +57,7 @@ nav {
     outline: none;
 }
 
-input:focus {
-    border-color: #9b4caf;
-    box-shadow: 0 0 5px #a74caf;
-}
-
+/*boton lupa*/
 .buscar button {
     padding: 0;
     border: none;
@@ -70,13 +66,13 @@ input:focus {
     cursor: pointer;
 }
 
-/*Iconos*/
+/*Iconos carrito y usuario */
 .icons {
     display: flex;
     align-items: center;
     gap: 15px;
 }
-
+/*imagen iconos carrito y usuario */
 .icons img {
     width: 60px;
     height: 55px;
@@ -88,15 +84,15 @@ input:focus {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
-    padding: 5px 20px;
+    gap: 30px;
+    padding: 4px 20px;
     background-color: #e0b8d4;
     font-weight: normal;
     position: sticky;
-    top: 80px; /* Debajo del header fijo */
+    top: 80px; 
     z-index: 999;
 }
-
+/*menu links*/
 .menu a {
     color: black;
     text-decoration: none;
@@ -106,18 +102,18 @@ input:focus {
 }
 
 .menu a:hover {
-    background-color: #d78ca6;
+    background-color: #771b3b;
 }
-
-.productos-cejas {
+/*seccion*/
+.productos {
     text-align: center;
     padding: 100px 20px 20px;
     background-color: #ffe4f2;
     font-size: 2.5rem;
     color: #d78ca6;
 }
-
-.cejas1 {
+/*main*/
+.producto {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -127,103 +123,86 @@ input:focus {
     background-color: #fff0f7;
     
 }
-
-.imagen-cejas1 img {
+/*imagen del producto*/
+.imagenes img {
     width: 380px;
+    height: 380px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
-
-
-.informacion-cejas1 {
+/*bloque de la mitad*/
+.informacion {
+    height: 380px;
     max-width: 400px;
     padding: 40px 10px;
     text-align: center;
+    justify-content: center;
     
 }
 
-.informacion-cejas1 h2 {
+.informacion h2 {
     font-size: 2.5rem;
     color: #333;
     font-weight: normal;
 }
-.informacion-cejas1 h4{
+.informacion h4{
     font-size: 2rem;
     color: #d78ca6;
     padding: 10px;
 }
-.informacion-cejas1 p{
+.informacion p{
     font-size: 1rem;
     color: #333;
     padding: 10px 10px 10px;
 }
 
-.informacion-cejas1 select{
+.informacion select{
+    display: block;
     padding: 5px 70px;
-    margin: 10px 0;
+    margin: 10px auto;
     background-color: #fff0f7;
     border: 1px solid rgba(0, 0, 0, 0.24);
 }
-.informacion-cejas1 input[type="number"] {
-    width: 25px; 
-    padding: 1px 1px;
-    margin: 10px 0;
-    background-color: #fff0f7;
-    border: none;
-    text-align: center;
 
-    font-size: 1rem;
-    
-}
-.contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:10px;
-    
-}
+/*contenedor de carrito y cantidad*/
 .cantidad {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1px;
-    margin-bottom: 2px;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+ }
+
+ .cantidad button {
+  background-color: #d78ca6;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 50%;
+  font-size: 1rem;
+  cursor: pointer;
+ }
+
+ .cantidad span {
+  font-size: 1.1rem;
+  width: 25px;
+  text-align: center;
 }
 
-
-
-.cantidad button {
-    padding: 5px 15px;
-    font-size: 1.2rem;
-    border-radius: 8px;
-    border: none;
-    background-color: #fff0f7;
-    cursor: pointer;
-    justify-content: center;
-}
-
-.boton-carrito button {
-    background-color: #d78ca6;
-    padding: 5px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.boton-carrito img {
-    width: 25px;
-    height: 25px;
-}
+ .cantidad img {
+  width: 35px;
+  cursor: pointer;
+  margin-top: 15px;
+ }
+ /*detales del producto*/
 .detalles {
-    width: 300px; /* más pequeña */
-    padding: 60px 30px;
+    width: 300px; 
+    height: 380px;
+    padding: 30px 30px;
     text-align: center;
     border-radius: 10px;
     border: 3px solid #ffe4f2;
     
 }
-
 
 .detalles h3 {
     margin-top: 20px;
@@ -236,8 +215,137 @@ input:focus {
     color: #444;
     margin-top: 10px;
 }
-.imagen-cejas1,
-.informacion-cejas1,
-.detalles {
-    height: 380px;
+/*Contacto*/
+.btn-contacto {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s, background-color 0.3s;
+  justify-content: center;
+  align-items: center;
 }
+
+.btn-contacto img {
+  width: 50px;
+  height: 50px;
+}
+
+.btn-contacto:hover{
+  background-color: #e9cbe0;
+  transform: scale(1.1);
+}
+
+/* Responsivo*/
+@media (max-width: 768px) {
+  .buscar {
+    max-width: 100%;
+    margin: 10px 0;
+    justify-content: center;
+  }
+
+  
+  .producto {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 30px;
+  }
+  .productos {
+    padding-top: 160px; 
+    font-size: 2rem; 
+}
+  .imagenes {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .imagenes img,
+  .informacion,
+  .detalles {
+    width: 90%;
+    height: auto;
+    max-width: 100%;
+
+  }
+
+  .informacion {
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .cantidad {
+    flex-direction: row;
+  }
+
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+
+  .icons img {
+    width: 40px;
+    height: 40px;
+  }
+ 
+
+  /* Ajuste general del nav */
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+/* Para celulares (máximo 480px) */
+@media (max-width: 480px) {
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo h1 {
+    font-size: 1.2rem;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .buscar input {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+
+  .informacion h2 {
+    font-size: 1.8rem;
+  }
+
+  .informacion h4 {
+    font-size: 1.5rem;
+  }
+
+  .detalles {
+    padding: 20px 10px;
+    height: auto;
+  }
+
+  .cantidad button {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+
+  .cantidad img {
+    width: 28px;
+    margin-top: 10px;
+  }
+  .imagenes {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+}
+
+

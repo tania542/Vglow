@@ -7,14 +7,20 @@
 }
 body {
     font-family: "Chau Philomene One", sans-serif;
+    font-weight: 400px;
     font-style: italic;
-  }
+    background-color: #ffe4f2;
+    padding-top: 40px;
+}
 
-  header {
+/*Navegación*/
+header {
     width: 100%;
+    top: 0;
+    left: 0;
     padding: 10px;
     position: fixed;
-    background: #e9cbe0;
+    background-color: #e9cbe0;
     z-index: 9999;
 }
 
@@ -41,7 +47,12 @@ nav {
 .logo h1{
     font-size: 2rem;
 }
-/*busqueda*/
+
+/*Busqueda*/
+main {
+  margin-top: 120px;
+  }  
+
 .buscar {
     display: flex;
     flex: 1;
@@ -57,10 +68,15 @@ nav {
     outline: none;
 }
 
+input:focus {
+    border-color: #a74caf;
+    box-shadow: 0 0 5px #a74caf;
+}
+
 .buscar button {
-    padding: 0;
+    padding: 5px;
     border: none;
-    background-color: #e4bdff;
+    background-color: #e9cbe0;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -78,32 +94,53 @@ nav {
     cursor: pointer;
 }
 
-/*Carrusel* esta mal/
+/*Carrusel*/
+
 .carousel {
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  display: flex;
-  max-width: 800px;
-  margin: 10px auto;
-  border-radius: 10px;
-  scroll-behavior: smooth;
+    position: relative;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 10px auto;
+    z-index: 1;
 }
 
 .carousel-imagenes {
-  display: flex;
-  flex-wrap: nowrap;
-  width: max-content;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
 .carousel-imagenes img {
-  flex: 0 0 100%;
-  scroll-snap-align: center;
-  width: 100%;
-  object-fit: contain;
-  max-height: 450px;
-  border-radius: 10px;
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: contain;
+    max-height: 450px;
 }
 
+/*Botones carrusel*/
+.carousel-btn{
+    position: absolute;
+    top: 40%;
+    transition: transform 0.3s ease;
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+    padding: 5px 12px;
+    cursor: pointer;
+    color: #a3a3a3;
+    z-index: 2;
+}
+
+.carousel-btn:hover {
+    transform: scale(1.05);
+}
+
+.carousel-btn.prev {
+    left: 15px;
+}
+
+.carousel-btn.next {
+    right: 15px;
+}
 
 /*Mensaje no testamos en animales*/
 .animales{
@@ -126,7 +163,6 @@ nav {
     width: 100%;
     margin-top: 20px;
  }
-
  .categorias h2 {
     color: #a782a4;
     font-size: 2.5rem;
@@ -167,17 +203,12 @@ nav {
     height: 140px;
     object-fit: contain;
  }
- .labios {
-  background: transparent;
-}
-
 
  .categorias-contenedor h4 {
     font-size: 1rem;
  }
 
  /*Botonces Categoria*/
-
  .cat-btn {
     background: none;
     border: none;
@@ -188,7 +219,6 @@ nav {
  }
 
  /*Lo más vendido*/
-
  .mas-vendido {
   padding: 20px 0px;
   text-align: center;
@@ -203,117 +233,31 @@ nav {
   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-.contenedor-productos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  justify-content: center;
-  padding: 20px;
-}
-.enlace-tarjeta {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
 
-.enlace-tarjeta img {
-  display: block;
-  width: 100%; /* o lo que necesites */
-  height: auto;
-}
-.tarjeta-producto {
-  display: flex;
-  background-color: #fff4f9;
-  border-radius: 15px;
-  padding: 20px;
+ .productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  align-items: center;
-  box-shadow: 0px 0px 10px rgba(244, 182, 222, 0.3);
-  width: 45%;
-  min-width: 300px;
-}
+  justify-content: center;
+  padding: 20px;
+  max-width: 80%;
+  margin: 0 auto 30px;
+ }
 
-.imagen-cejas1 {
-  background-color: #e8cfe6;
+ .producto {
+  background: #fff;
   padding: 15px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.imagen-cejas1 img {
-  width: 200px;
-  height: auto;
-}.info-producto {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  
-}
-
-.info-producto h2 {
-  font-size: 1.8rem;
-  color: #000;
-  margin-bottom: 10px;
-  font-weight: normal;
-}
-
-.info-producto p {
-  font-size: 1rem;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-
-
-.cantidad {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 2px;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   text-align: center;
-}
+ }
 
-.cantidad button {
-  padding: 10px 1px;
-  font-size: 1.2rem;
-  border-radius: 8px;
-  border: none;
-  background-color: #fff0f7;
-  cursor: pointer;
-}
-
-.cantidad input[type="number"] {
-  width: 25px;
-  padding: 1px 1px;
-  margin: 10px 0;
-  background-color: #fff0f7;
-  border: none;
-  text-align: right;
-  font-size: 1rem;
-
-}
-
-.boton-carrito button {
-  background-color: #d78ca6;
-  padding: 5px;
-  border: none;
+ .producto img.producto-imagen {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  margin-bottom: 10px;
   border-radius: 10px;
-  cursor: pointer;
-}
-
-.boton-carrito img {
-  width: 20px;
-  height: 20px;
-}
-
-.enlace-tarjeta {
-  text-decoration: none;
-  color: inherit;
-  display: block;
 }
 
 /* Icono del carrito */
@@ -342,7 +286,7 @@ nav {
  }
 
  .cantidad button {
-  background-color: #a74caf;
+  background-color: #d78ca6;
   color: #fff;
   border: none;
   padding: 8px 12px;
@@ -365,7 +309,6 @@ nav {
  }
 
  /*Contacto*/
-
  .btn-contacto {
     position: fixed;
     bottom: 20px;
@@ -389,7 +332,7 @@ nav {
  }
 
  footer {
-  background-color: #e8cfe6;
+  background-color: #e9cbe0;
   color: #333;
   text-align: center;
   padding: 20px;

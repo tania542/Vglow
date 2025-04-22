@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 
-
 body {
   font-family: "Chau Philomene One", sans-serif;
   font-style: italic;
@@ -113,7 +112,7 @@ input:focus {
   background-color: #d78ca6;
 }
 
-.productos-cejas {
+.productos {
   text-align: center;
   padding: 100px 20px 20px;
   background-color: #ffe4f2;
@@ -121,7 +120,6 @@ input:focus {
   color: #d78ca6;
 
 }
-
 
 .contenedor-productos {
   display: flex;
@@ -154,7 +152,7 @@ input:focus {
   min-width: 300px;
 }
 
-.imagen-cejas1 {
+.imagenes {
   background-color: #e8cfe6;
   padding: 15px;
   border-radius: 10px;
@@ -163,7 +161,7 @@ input:focus {
   justify-content: center;
 }
 
-.imagen-cejas1 img {
+.imagenes img {
   width: 200px;
   height: auto;
 }
@@ -189,52 +187,181 @@ input:focus {
   color: #333;
 }
 
-
-
 .cantidad {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 10px;
-  margin-bottom: 2px;
+ }
+
+ .cantidad button {
+  background-color: #d78ca6;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 50%;
+  font-size: 1rem;
+  cursor: pointer;
+ }
+
+ .cantidad span {
+  font-size: 1.1rem;
+  width: 25px;
   text-align: center;
 }
 
-.cantidad button {
-  padding: 10px 1px;
-  font-size: 1.2rem;
-  border-radius: 8px;
-  border: none;
-  background-color: #fff0f7;
+ .cantidad img {
+  width: 35px;
   cursor: pointer;
-}
-
-.cantidad input[type="number"] {
-  width: 25px;
-  padding: 1px 1px;
-  margin: 10px 0;
-  background-color: #fff0f7;
-  border: none;
-  text-align: right;
-  font-size: 1rem;
-
-}
-
-.boton-carrito button {
-  background-color: #d78ca6;
-  padding: 5px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.boton-carrito img {
-  width: 20px;
-  height: 20px;
-}
+  margin-top: 15px;
+ }
 
 .enlace-tarjeta {
   text-decoration: none;
   color: inherit;
   display: block;
+}
+/*Contacto*/
+.btn-contacto {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s, background-color 0.3s;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-contacto img {
+  width: 50px;
+  height: 50px;
+}
+
+.btn-contacto:hover{
+  background-color: #e9cbe0;
+  transform: scale(1.1);
+}
+footer {
+  background-color: #e9cbe0;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 15px;
+ }
+
+ footer p {
+  margin: p;
+ }
+
+/* Móviles */
+@media (max-width: 768px) {
+  .buscar {
+    max-width: 100%;
+    margin: 10px 0;
+    justify-content: center;
+  }
+
+  
+  .producto {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 30px;
+  }
+  .productos {
+    padding-top: 160px; 
+    font-size: 2rem; 
+}
+  .imagenes {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .imagenes img,
+  .informacion,
+  .detalles {
+    width: 90%;
+    height: auto;
+    max-width: 100%;
+
+  }
+
+  .informacion {
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .cantidad {
+    flex-direction: row;
+  }
+
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+
+  .icons img {
+    width: 40px;
+    height: 40px;
+  }
+ 
+
+  /* Ajuste general del nav */
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+/* Para celulares (máximo 480px) */
+@media (max-width: 480px) {
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo h1 {
+    font-size: 1.2rem;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .buscar input {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+
+  .informacion h2 {
+    font-size: 1.8rem;
+  }
+
+  .informacion h4 {
+    font-size: 1.5rem;
+  }
+
+  .detalles {
+    padding: 20px 10px;
+    height: auto;
+  }
+
+  .cantidad button {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+
+  .cantidad img {
+    width: 28px;
+    margin-top: 10px;
+  }
+  .imagenes {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
 }
