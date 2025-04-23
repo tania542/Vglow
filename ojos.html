@@ -1,39 +1,143 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>VGlow - Cejas</title>
+    <link rel="stylesheet" href="stylesSecciones.css">
 </head>
+
 <body>
     <!-- Encabezado -->
     <header>
-        <div>
-            <a href="index.html">
+        <nav>
+            <a href="index.html" class="logo">
                 <img src="img/logo.png" alt="logo">
-                <h1>v.glow</h1>
+                <h1>VGlow</h1>
             </a>
-            <form action="#" method="get">
+            <form action="#" method="get" class="buscar">
                 <input type="text" name="search" placeholder="Escribe tu búsqueda...">
-                <button type="submit">Buscar</button>
+                <button type="submit">
+                    <img src="img/lupa.png" alt="Buscar" style="width: 30px; height: 30px;">
+                </button>
             </form>
-            <img src="img/carrito.png" alt="carrito">
-            <img src="img/usuario.png" alt="usuario">
-        </div>
+            <div class="icons">
+                <img src="img/carrito.png" alt="carrito">
+                <img src="img/usuario.png" alt="usuario">
+            </div>
+        </nav>
     </header>
 
-    <body>
-        <nav>
-            <a href="labios.html">Labios</a>
-            <a href="ojos.html">Ojos</a>
-            <a href="cejas.html">Cejas</a>
-            <a href="accesorios.html">Accesorios</a>
-            <a href="skincare.html">Skin Care</a>
-            <a href="brochas.html">Brochas</a>
-            <a href="miniglowlovers.html">MiniGlowlovers</a>
-            <a href="cuidadocorporal.html">Cuidado corporal</a>
-            <a href="cuidadocorporal.html">Cuidado capilar</a>
-        </nav>
-    </body>
+    <!-- Menú -->
+    <nav class="menu">
+        <a href="labios.html">Labios</a>
+        <a href="ojos.html">Ojos</a>
+        <a href="cejas.html">Cejas</a>
+        <a href="accesorios.html">Accesorios</a>
+        <a href="skincare.html">Skin Care</a>
+        <a href="brochas.html">Brochas</a>
+        <a href="miniglowlovers.html">MiniGlowlovers</a>
+        <a href="cuidadocorporal.html">Cuidado corporal</a>
+        <a href="cuidadocapilar.html">Cuidado capilar</a>
+    </nav>
+
+    <!-- Sección principal -->
+    <section class="productos">
+        <h1>Ojos</h1>
+    </section>
+
+    <section class="contenedor-productos">
+        <div class="tarjeta-producto">
+            <div class="imagenes">
+                <a href="ojos1.html" class="enlace-tarjeta">
+                    <img src="img/ojos1.png" alt="Delineador de Glitter">
+            </div>
+            <div class="info-producto">
+                <h2>Delineador de Glitter</h2>
+                <p>¡Que nunca te falte el delineado en glitter! 
+                    Delineadores satinados para darles un pop de brillo a tus looks...</p>
+                    <div class="cantidad">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                        <img class="carrito" src="img/carritoSecciones.png" alt="carrito" class="carrito-icono">
+                      </div>
+            </div>
+            </a>
+        </div>
+
+        <div class="tarjeta-producto">
+            <div class="imagenes">
+                <a href="ojos2.html" class="enlace-tarjeta">
+                    <img src="img/ojos2.png" alt="Delineadores Urban">
+            </div>
+            <div class="info-producto">
+                <h2>Delineadores Urban</h2>
+                <p>Los delineados sí hacen la diferencia.
+                    Nada va a superar un look lleno de estilo.
+                    Pigmentación increíble desde el primer trazo.
+                </p>
+
+                <div class="cantidad">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                    <img class="carrito" src="img/carritoSecciones.png" alt="carrito" class="carrito-icono">
+                  </div>
+            </div>
+            </a>
+        </div>
+
+        <div class="tarjeta-producto">
+            <div class="imagenes">
+                <a href="ojos3.html" class="enlace-tarjeta">
+                    <img src="img/ojos3.png" alt="Paleta Artística Jack">
+            </div>
+            <div class="info-producto">
+                <h2>Paleta Artística Jack</h2>
+                <p>¡Explota tu creatividad con la paleta más cremosa y colorida de la colección inspirada en Jack!</p>
+
+                <div class="cantidad">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                    <img class="carrito" src="img/carritoSecciones.png" alt="carrito" class="carrito-icono">
+                  </div>
+            </div>
+            </a>
+        </div>
+
+
+        <div class="tarjeta-producto">
+            <div class="imagenes">
+                <a href="ojos4.html" class="enlace-tarjeta">
+                    <img src="img/ojos4.png" alt="Kit Sombra Y Gloss L.A.">
+            </div>
+            <div class="info-producto">
+                <h2>Kit Sombra Y Gloss L.A.</h2>
+                <p>En este kit encuentras un gloss de acabado luminoso, con pequeños destellos.
+                    También encontrarás una paleta de sombras...</p>
+
+                    <div class="cantidad">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                        <img class="carrito" src="img/carritoSecciones.png" alt="carrito" class="carrito-icono">
+                      </div>
+            </div>
+            </a>
+        </div>
+
+    </section>
+    <a href="contacto.html" class="btn-contacto">
+        <img src="img/contacto.png" alt="contacto">
+    </a> 
+    <!-- Pie de página -->
+<footer>
+    <p>&copy; 2025 v.glow. Todos los derechos reservados.</p>
+</footer>
 
 </body>
+
 </html>

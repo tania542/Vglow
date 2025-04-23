@@ -1,39 +1,143 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>VGlow - Brochas</title>
+    <link rel="stylesheet" href="stylesSecciones.css">
 </head>
+
 <body>
     <!-- Encabezado -->
     <header>
-        <div>
-            <a href="index.html">
+        <nav>
+            <a href="index.html" class="logo">
                 <img src="img/logo.png" alt="logo">
-                <h1>v.glow</h1>
+                <h1>VGlow</h1>
             </a>
-            <form action="#" method="get">
+            <form action="#" method="get" class="buscar">
                 <input type="text" name="search" placeholder="Escribe tu búsqueda...">
-                <button type="submit">Buscar</button>
+                <button type="submit">
+                    <img src="img/lupa.png" alt="Buscar" style="width: 30px; height: 30px;">
+                </button>
             </form>
-            <img src="img/carrito.png" alt="carrito">
-            <img src="img/usuario.png" alt="usuario">
-        </div>
+            <div class="icons">
+                <img src="img/carrito.png" alt="carrito">
+                <img src="img/usuario.png" alt="usuario">
+            </div>
+        </nav>
     </header>
 
-    <body>
-        <nav>
-            <a href="labios.html">Labios</a>
-            <a href="ojos.html">Ojos</a>
-            <a href="cejas.html">Cejas</a>
-            <a href="accesorios.html">Accesorios</a>
-            <a href="skincare.html">Skin Care</a>
-            <a href="brochas.html">Brochas</a>
-            <a href="miniglowlovers.html">MiniGlowlovers</a>
-            <a href="cuidadocorporal.html">Cuidado corporal</a>
-            <a href="cuidadocorporal.html">Cuidado capilar</a>
-        </nav>
-    </body>
+    <!-- Menú -->
+    <nav class="menu">
+        <a href="labios.html">Labios</a>
+        <a href="ojos.html">Ojos</a>
+        <a href="cejas.html">Cejas</a>
+        <a href="accesorios.html">Accesorios</a>
+        <a href="skincare.html">Skin Care</a>
+        <a href="brochas.html">Brochas</a>
+        <a href="miniglowlovers.html">MiniGlowlovers</a>
+        <a href="cuidadocorporal.html">Cuidado corporal</a>
+        <a href="cuidadocapilar.html">Cuidado capilar</a>
+    </nav>
 
+    <!-- Sección principal -->
+    <section class="productos">
+        <h1>Brochas</h1>
+    </section>
+
+    <section class="contenedor-productos">
+        <div class="tarjeta-producto">
+            <div class="imagenes">
+                <a href="brochas1.html" class="enlace-tarjeta">
+                    <img src="img/brochas1.png" alt="Kit Brochas Milkshake">
+            </div>
+            <div class="info-producto">
+                <h2>Kit Brochas Milkshake</h2>
+                <p>Kit de 5 brochas de maquillaje básicas.
+                    Son de pelo sintético, hechas con fibras de nylon y mango de Plástico resistente...
+                </p>
+                <div class="cantidad">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                    <img class="carrito" src="img/carritoSecciones.png" alt="carrito" class="carrito-icono">
+                  </div>
+            </div>
+            </a>
+        </div>
+
+        <div class="tarjeta-producto">
+            <div class="imagenes">
+                <a href="brochas2.html" class="enlace-tarjeta">
+                    <img src="img/brochas2.png" alt="Kit Brochas x10">
+            </div>
+            <div class="info-producto">
+                <h2>Kit Brochas x10</h2>
+                <p>¡Nuestro Kit de Brochas Tornasol es el básico que debes tener en tu tocador! Trae 10 brochas para rostro y ojos. 
+                </p>
+
+                <div class="cantidad">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                    <img class="carrito" src="img/carritoSecciones.png" alt="carrito" class="carrito-icono">
+                  </div>
+            </div>
+            </a>
+        </div>
+
+        <div class="tarjeta-producto">
+            <div class="imagenes">
+                <a href="brochas3.html" class="enlace-tarjeta">
+                    <img src="img/brochas3.png" alt="Kit Brocha Básica">
+            </div>
+            <div class="info-producto">
+                <h2>Kit Brocha Básica</h2>
+                <p> Este kit de brochas trae un empaque interno que te ayudará a mantenerlas más organizadas.
+                    Además, ya no tienes que preocuparte por...</p>
+
+                    <div class="cantidad">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                        <img class="carrito" src="img/carritoSecciones.png" alt="carrito" class="carrito-icono">
+                      </div>
+            </div>
+            </a>
+        </div>
+
+
+        <div class="tarjeta-producto">
+            <div class="imagenes">
+                <a href="brochas4.html" class="enlace-tarjeta">
+                    <img src="img/brochas4.png" alt="Kit Brocha Cejas Orgánicas">
+            </div>
+            <div class="info-producto">
+                <h2>Kit Cejas Orgánicas</h2>
+                <p>Cejas on point siempre con nuestro cepillo doble para cejas.
+                     Peina y da forma a las cejas logrando un acabado definido y pulido.
+                </p>
+
+                <div class="cantidad">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                    <img class="carrito" src="img/carritoSecciones.png" alt="carrito" class="carrito-icono">
+                  </div>
+            </div>
+            </a>
+        </div>
+
+    </section>
+    <a href="contacto.html" class="btn-contacto">
+        <img src="img/contacto.png" alt="contacto">
+    </a> 
+    <!-- Pie de página -->
+<footer>
+    <p>&copy; 2025 v.glow. Todos los derechos reservados.</p>
+</footer>
 </body>
+
 </html>

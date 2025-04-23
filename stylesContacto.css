@@ -1,81 +1,82 @@
+
 /* Cajita contenedora del formulario */
 .contact-form {
-    max-width: 600px;
-    margin: 100px auto 60px; /* margen superior para evitar solaparse */
-    padding: 30px;
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  /* Título del formulario */
-  .contact-form h1 {
-    font-size: 2.5rem;
-    color: #5f3c5c;
-    margin-bottom: 30px;
-    font-weight: bold;
-  }
-  
-  /* Formulario */
-  .contact-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  /* Labels */
-  .contact-form form label {
-    text-align: left;
-    font-size: 1rem;
-    color: #5f3c5c;
-    margin-bottom: 5px;
-  }
-  
-  /* Inputs y textarea */
-  .contact-form form input,
-  .contact-form form textarea {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    font-family: inherit;
-    font-size: 1rem;
-    outline-color: #e4bdff;
-    resize: none;
-  }
-  
-  /* Botón exclusivo del formulario */
-  .form-btn {
-    background-color: #e4bdff;
-    color: #fff;
-    border: none;
-    padding: 10px 14px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    transition: background-color 0.3s;
-    margin-top: 10px;
-  }
-  
-  .form-btn:hover {
-    background-color: #a74caf;
-  }
-  
+  max-width: 600px;
+  margin: 100px auto 60px; /* margen superior para evitar solaparse */
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Título del formulario */
+.contact-form h1 {
+  font-size: 2.5rem;
+  color: #5f3c5c;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Formulario */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Labels */
+.contact-form form label {
+  text-align: left;
+  font-size: 1rem;
+  color: #5f3c5c;
+  margin-bottom: 5px;
+}
+
+/* Inputs y textarea */
+.contact-form form input,
+.contact-form form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+  outline-color: #e4bdff;
+  resize: none;
+}
+
+/* Botón exclusivo del formulario */
+.form-btn {
+  background-color: #e4bdff;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.form-btn:hover {
+  background-color: #a74caf;
+}
+
 /* Imagen del ícono */
 .form-btn .btn-icon {
-    width: 18px;
-    height: 18px;
+  width: 18px;
+  height: 18px;
+}
+
+/* RESPONSIVO: margen arriba para pantallas pequeñas */
+@media (max-width: 768px) {
+  .contact-form {
+    margin: 170px 20px 60px;
+    padding: 20px;
   }
-  
-  /* RESPONSIVO: margen arriba para pantallas pequeñas */
-  @media (max-width: 768px) {
-    .contact-form {
-      margin: 170px 20px 60px;
-      padding: 20px;
-    }
-  }
-  
+}
+
