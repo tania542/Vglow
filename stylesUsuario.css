@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Chau Philomene One", sans-serif;
+    font-weight: 400px;
+    font-style: italic;
+    background-color: #ffe4f2;
+    padding-top: 80px;
+}
+
+/*Navegación*/
+header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    position: fixed;
+    background-color: #e9cbe0;
+    z-index: 9999;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.logo h1{
+    font-size: 2rem;
+}
+
+/*Busqueda*/
+main {
+  margin-top: 120px;
+  }  
+
+.buscar {
+    display: flex;
+    flex: 1;
+    max-width: 400px;
+    margin-right: 500px;
+}
+
+.buscar input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #a74caf;
+    box-shadow: 0 0 5px #a74caf;
+}
+
+.buscar button {
+    padding: 5px;
+    border: none;
+    background-color: #e9cbe0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*Iconos*/
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icons img {
+    width: 60px;
+    height: 55px;
+    cursor: pointer;
+}
+
+/* Estilo general de la sección */
+.usuario-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    background: #ffe4f2;
+    padding: 10px;
+}
+
+/* Estilo del formulario */
+.usuario-form {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Botones superiores */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #d78ca6;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn.active,
+.btn:hover {
+    background-color: rgb(211, 142, 165);
+    color: white;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #a782a4;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+/* Etiquetas y campos de entrada */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+/* Contenedor para el campo de contraseña */
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 30%;
+    right: 12px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Botón de envío */
+.btn.submit {
+    width: 100%;
+    background-color: #b9788e;
+    color: white;
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+.btn.registro {
+    width: 100%;
+    background-color: #b9788e;
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.btn.password {
+    width: 100%;
+    background-color: #b9788e;
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.btn.submit:hover, .btn.registro:hover, .btn.password:hover {
+    background-color: rgb(211, 142, 165);
+}
+
+/*Contacto*/
+.btn-contacto {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s, background-color 0.3s;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn-contacto img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .btn-contacto:hover{
+    background-color: #e4bdff;
+    transform: scale(1.1);
+  }
+  
+  footer {
+  background-color: #e9cbe0;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 15px;
+  }
+  
+  footer p {
+  margin: p;
+  }
+
+  /* RESPONSIVE DESIGN */
+
+/* Tablets (max-width: 991px) */
+@media (max-width: 991px) {
+
+    body {
+        padding-top: 200px;
+      }
+    
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      .buscar {
+        width: 100%;
+        margin: 10px 0;
+      }
+    
+      .icons {
+        margin-top: 10px;
+      }
+
+    .registro-form {
+        padding: 25px;
+        max-width: 90%;
+    }
+
+}
+
+/* Smartphones (max-width: 600px) */
+@media (max-width: 600px) {
+
+    body {
+        padding-top: 250px;
+      }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        font-size: 13px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .btn.submit {
+        font-size: 15px;
+    }
+}

@@ -1,87 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=Dancing+Script:wght@400..700&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
 body {
-  font-family: "Chau Philomene One", sans-serif;
-  font-style: italic;
+    font-family: "Chau Philomene One", sans-serif;
+    font-weight: 400px;
+    font-style: italic;
+    background-color: #ffe4f2;
+    padding-top: 40px;
 }
 
+/*Navegación*/
 header {
-  width: 100%;
-  padding: 10px;
-  position: fixed;
-  background: #e9cbe0;
-  z-index: 9999;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    position: fixed;
+    background-color: #e9cbe0;
+    z-index: 9999;
 }
 
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #333;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
 }
 
 .logo img {
-  width: 70px;
-  height: 70px;
-  margin-right: 10px;
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
 }
 
-.logo h1 {
-  font-size: 2rem;
+.logo h1{
+    font-size: 2rem;
 }
+
+/*Busqueda*/
+main {
+  margin-top: 120px;
+  }  
 
 .buscar {
-  display: flex;
-  flex: 1;
-  max-width: 400px;
-  margin-right: 500px;
+    display: flex;
+    flex: 1;
+    max-width: 400px;
+    margin-right: 500px;
 }
 
 .buscar input {
-  flex: 1;
-  padding: 8px 12px;
-  border: 1px solid #ddd;
-  border-radius: 50px;
-  outline: none;
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    outline: none;
 }
 
 input:focus {
-  border-color: #9b4caf;
-  box-shadow: 0 0 5px #a74caf;
+    border-color: #a74caf;
+    box-shadow: 0 0 5px #a74caf;
 }
 
 .buscar button {
-  padding: 0;
-  border: none;
-  background-color: #e4bdff;
-  border-radius: 10px;
-  cursor: pointer;
+    padding: 5px;
+    border: none;
+    background-color: #e9cbe0;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 /*Iconos*/
 .icons {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .icons img {
-  width: 60px;
-  height: 55px;
-  cursor: pointer;
+    width: 60px;
+    height: 55px;
+    cursor: pointer;
 }
 
 /*menu*/
@@ -194,6 +204,10 @@ input:focus {
   gap: 10px;
  }
 
+ .carrito {
+  margin-bottom: 10px;
+}
+
  .cantidad button {
   background-color: #d78ca6;
   color: #fff;
@@ -221,6 +235,7 @@ input:focus {
   color: inherit;
   display: block;
 }
+
 /*Contacto*/
 .btn-contacto {
   position: fixed;
@@ -240,24 +255,30 @@ input:focus {
 }
 
 .btn-contacto:hover{
-  background-color: #e9cbe0;
+  background-color: #e4bdff;
   transform: scale(1.1);
 }
-footer {
-  background-color: #e9cbe0;
-  color: #333;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-  margin-top: 15px;
- }
 
- footer p {
-  margin: p;
- }
+footer {
+background-color: #e9cbe0;
+color: #333;
+text-align: center;
+padding: 20px;
+font-size: 0.9rem;
+margin-top: 15px;
+}
+
+footer p {
+margin: p;
+}
 
 /* Móviles */
 @media (max-width: 768px) {
+
+  main{
+    margin-top: 170px;
+  }
+
   .buscar {
     max-width: 100%;
     margin: 10px 0;
@@ -319,6 +340,10 @@ footer {
 
 /* Para celulares (máximo 480px) */
 @media (max-width: 480px) {
+  main{
+    margin-top: 200px;
+  }
+
   .logo img {
     width: 50px;
     height: 50px;
