@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <!-- Encabezado -->
+    <!-- Encabezado -->
     <header>
         <nav>
             <a href="index.html" class="logo">
@@ -21,28 +21,30 @@
             <form action="#" method="get" class="buscar">
                 <input type="text" name="search" placeholder="Escribe tu búsqueda...">
                 <button type="submit">
-                <i class="fa-solid fa-magnifying-glass lupa" style="color: #ffffff;" ></i>
+                    <i class="fa-solid fa-magnifying-glass lupa" style="color: #ffffff;"></i>
                 </button>
             </form>
             <div class="icons">
-                <a href="carrito.html"><i class="fa-solid fa-cart-shopping carrito-icono" style="color: #ffffff;"></i></a>
+                <a href="carrito.html"><i class="fa-solid fa-cart-shopping carrito-icono"
+                        style="color: #ffffff;"></i></a>
                 <a href="loguin.html"><i class="fa-solid fa-circle-user login-icono" style="color: #ffffff;"></i></a>
             </div>
         </nav>
-     </header>
+    </header>
+    <main>
+        <section class="contendor-login">
+            <div class="formulario">
+                <h1>¿Olvidaste tu contraseña?</h1>
+                <p>Ingresa tu correo electrónico para enviarte un enlace y puedas recuperar tu nueva contraseña</p><br>
+                <form>
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" required>
 
-    <section class="usuario-container">
-        <div class="usuario-form">
-            <h1>¿Olvidaste tu contraseña?</h1>
-            <p>Ingresa tu correo electrónico para enviarte un enlace y puedas recuperar tu nueva contraseña</p><br>
-            <form>
-                <label for="correo">Correo Electrónico</label>
-                <input type="email" id="correo" required>
-            
-                <button type="submit" class="btn password">Restablecer Contraseña</button>
-            </form>
-        </div>
-    </section>
+                    <button type="submit" class="botonac">Restablecer Contraseña</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <!-- Pie de página -->
     <footer>
