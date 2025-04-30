@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    /*eliminar la margen por defecto*/
+    padding: 0;
+    /**/
+    box-sizing: border-box;
+    /**/
+}
+
+body {
+    font-family: "Chau Philomene One", sans-serif;
+    font-style: italic;
+    background-color: #ffe4f2;
+}
+
+/*encabezado*/
+header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    position: fixed;
+    background: #e9cbe0;
+    z-index: 9999;
+}
+
+/*seccion de navegacion*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*logo marca*/
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+/*tamaño  logo marca  imagen*/
+.logo img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+/*texto del lado*/
+.logo h1 {
+    font-size: 2rem;
+}
+
+/**/
+.buscar {
+    display: flex;
+    flex: 1;
+    max-width: 400px;
+    margin-right: 500px;
+}
+
+/*texto barra buscar*/
+.buscar input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    outline: none;
+}
+
+/*boton lupa*/
+.buscar button {
+    padding: 0;
+    border: none;
+    background-color: #e9cbe0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*Iconos carrito y usuario */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/*imagen iconos carrito y usuario */
+
+.lupa {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  
+.carrito-icono, .login-icono {
+    font-size: 30px;
+  }
+
+main {
+    margin-top: 80px;
+}
+
+.contendor-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.formulario {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+.boton {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #ffe4f2;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+ 
+.boton:hover {
+    background-color: #d59eb6;
+}
+
+.boton:active {
+    background-color: #d59eb6;
+    color: white;
+}
+.formulario h1 {
+    color: #d78ca6;
+    margin-bottom: 20px;
+}
+label {
+    margin-bottom: 5px;
+    color: black;
+}
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.password-container {
+    position: relative;
+}
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+/* Link de olvidé contraseña */
+a[href*="olvideContrasena"] {
+    color: black;
+    font-size: 14px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+/* Botón de acceder */
+.botonac {
+    background-color: white;
+    color: #d78ca6;
+    font-size: 16px;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.botonac:hover {
+    background-color: #ffe4f2;
+}
+footer {
+    background-color: #e9cbe0;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    margin-top: 15px;
+    }
+    
+    footer p {
+    margin: 0;
+    }
+
+/* RESPONSIVE DESIGN */
+
+/* Tablets (max-width: 991px) */
+@media (max-width: 991px) {
+
+    body {
+        padding-top: 200px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .buscar {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .icons {
+        margin-top: 10px;
+    }
+
+    .registro-form {
+        padding: 25px;
+        max-width: 90%;
+    }
+
+}
+
+/* Smartphones (max-width: 600px) */
+@media (max-width: 600px) {
+
+    body {
+        padding-top: 250px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        font-size: 13px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .btn.submit {
+        font-size: 15px;
+    }
+}

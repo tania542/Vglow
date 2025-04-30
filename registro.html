@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>V.GLOW</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="icon" type="image/png" href="img/logo.png">
-    <link rel="stylesheet" href="stylesUsuario.css">
+    <link rel="stylesheet" href="css/stylesUsuario.css">
 </head>
 
 <body>
@@ -20,44 +21,46 @@
             <form action="#" method="get" class="buscar">
                 <input type="text" name="search" placeholder="Escribe tu búsqueda...">
                 <button type="submit">
-                    <img src="img/lupa.png" alt="Buscar" style="width: 30px; height: 30px;">
+                    <i class="fa-solid fa-magnifying-glass lupa" style="color: #ffffff;"></i>
                 </button>
             </form>
             <div class="icons">
-                <img src="img/carrito.png" alt="carrito">
-                <img src="img/usuario.png" alt="usuario">
+                <a href="carrito.html"><i class="fa-solid fa-cart-shopping carrito-icono"
+                        style="color: #ffffff;"></i></a>
+                <a href="loguin.html"><i class="fa-solid fa-circle-user login-icono" style="color: #ffffff;"></i></a>
             </div>
         </nav>
     </header>
-
-    <section class="usuario-container">
-        <div class="usuario-form">
-            <div class="buttons">
-                <a href="login.html">
-                    <button class="btn">Acceder</button>
-                </a>
-                <a href="registro.html">
-                    <button class="btn active">Registrarse</button>
-                </a>
-            </div>
-            <h1>Registrarse</h1>
-            <form>
-                <label for="usuario">Nombre de Usuario</label>
-                <input type="text" id="usuario" required>
-                
-                <label for="correo">Correo Electrónico</label>
-                <input type="email" id="correo" required>
-                
-                <label for="contrasena">Contraseña</label>
-                <div class="password-container">
-                    <input type="password" id="contrasena" required>
-                    <span class="toggle-password">👁</span>
+    <main>
+        <section class="contendor-login">
+            <div class="formulario">
+                <div class="botones">
+                    <a href="loguin.html">
+                        <button class="boton">Acceder</button>
+                    </a>
+                    <a href="registro.html">
+                        <button class="boton">Registrarse</button>
+                    </a>
                 </div>
-                
-                <button type="submit" class="btn registro">Registrarse</button>
-            </form>
-        </div>
-    </section>
+                <h1>Registrarse</h1>
+                <form>
+                    <label for="correo">Nombre de usuario</label>
+                    <input type="email" id="nombre de usuario" required>
+
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" required>
+
+                    <label for="contrasena">Contraseña</label>
+                    <div class="password-container">
+                        <input type="password" id="contrasena" required>
+                        <span class="toggle-password">👁</span>
+                    </div>
+
+                    <button type="submit" class="botonac">Registrarse</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <!-- Pie de página -->
     <footer>

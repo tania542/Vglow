@@ -74,11 +74,11 @@ input:focus {
 }
 
 .buscar button {
-    padding: 5px;
-    border: none;
-    background-color: #e9cbe0;
-    border-radius: 10px;
-    cursor: pointer;
+  padding: 0;
+  border: none;
+  background-color: #e9cbe0;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 /*Iconos*/
@@ -88,10 +88,13 @@ input:focus {
     gap: 15px;
 }
 
-.icons img {
-    width: 60px;
-    height: 55px;
-    cursor: pointer;
+.lupa {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.carrito-icono, .login-icono {
+  font-size: 30px;
 }
 
 /*menu*/
@@ -227,7 +230,7 @@ input:focus {
  .cantidad img {
   width: 35px;
   cursor: pointer;
-  margin-top: 15px;
+  margin-top: 6px;
  }
 
 .enlace-tarjeta {
@@ -247,6 +250,8 @@ input:focus {
   transition: transform 0.3s, background-color 0.3s;
   justify-content: center;
   align-items: center;
+  width: 50px;
+  height: 50px;
 }
 
 .btn-contacto img {
@@ -259,18 +264,9 @@ input:focus {
   transform: scale(1.1);
 }
 
-footer {
-background-color: #e9cbe0;
-color: #333;
-text-align: center;
-padding: 20px;
-font-size: 0.9rem;
-margin-top: 15px;
-}
-
-footer p {
-margin: p;
-}
+ footer p {
+  margin: 0;
+ }
 
 /* Móviles */
 @media (max-width: 768px) {

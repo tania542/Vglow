@@ -1,183 +1,201 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>V.GLOW</title>
-    <link rel="icon" type="image/png" href="img/logo.png">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V.GLOW</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <!-- Encabezado -->
-    <header>
-        <nav>
-            <a href="index.html" class="logo">
-                <img src="img/logo.png" alt="logo">
-                <h1>Vglow</h1>
-            </a>
-            <form action="#" method="get" class="buscar">
-                <input type="text" name="search" placeholder="Escribe tu búsqueda...">
-                <button type="submit">
-                    <img src="img/lupa.png" alt="Buscar" style="width: 30px; height: 30px;">
-                </button>
-            </form>
-            <div class="icons">
-                <img src="img/carrito.png" alt="carrito">
-                <img src="img/usuario.png" alt="usuario">
+  <!-- Encabezado -->
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="logo">
+        <h1>Vglow</h1>
+      </a>
+      <form action="#" method="get" class="buscar">
+        <input type="text" name="search" placeholder="Escribe tu búsqueda...">
+        <button type="submit">
+        <i class="fa-solid fa-magnifying-glass lupa" style="color: #ffffff;" ></i>
+        </button>
+      </form>
+        <div class="icons">
+          <a href="carrito.html"><i class="fa-solid fa-cart-shopping carrito-icono" style="color: #ffffff;"></i></a>
+          <a href="loguin.html"><i class="fa-solid fa-circle-user login-icono" style="color: #ffffff;"></i></a>
+        </div>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <!-- Carrusel -->
+    <section class="carousel">
+      <div class="carousel-imagenes">
+        <img src="img/carrusel4.png" alt="foto1">
+        <img src="img/carrusel1.JPG" alt="foto2">
+        <img src="img/carrusel3.JPG" alt="foto3">
+      </div>
+      <button class="carousel-btn prev">❮</button>
+      <button class="carousel-btn next">❯</button>
+    </section>
+
+    <!-- Mensaje principal -->
+    <h2 class="animales">NO TESTEAMOS EN ANIMALES</h2>
+
+    <!-- Categorías -->
+    <section class="categorias">
+      <h2>Elige una categoría</h2>
+      <div class="categoria-lista">
+        <button class="cat-btn prev">❮</button>
+
+        <div class="categorias-contenedor">
+          <a href="labios.html">
+            <img src="img/labios.png" alt="Labios">
+            <h4>Labios</h4>
+          </a>
+          <a href="ojos.html">
+            <img src="img/ojos.png" alt="Ojos">
+            <h4>Ojos</h4>
+          </a>
+          <a href="cejas.html">
+            <img src="img/cejas.png" alt="Cejas">
+            <h4>Cejas</h4>
+          </a>
+          <a href="accesorios.html">
+            <img src="img/accesorios.png" alt="Accesorios">
+            <h4>Accesorios</h4>
+          </a>
+          <a href="skincare.html">
+            <img src="img/skin_care.png" alt="Skin Care">
+            <h4>Skin Care</h4>
+          </a>
+          <a href="brochas.html">
+            <img src="img/brochas.png" alt="Brochas">
+            <h4>Brochas</h4>
+          </a>
+          <a href="cuidadocorporal.html">
+            <img src="img/cuidado corporal.png" alt="Cuidado Corporal">
+            <h4>Cuidado Corporal</h4>
+          </a>
+        </div>
+
+        <button class="cat-btn next">❯</button>
+      </div>
+    </section>
+
+
+    <!-- Productos más vendidos -->
+    <section class="mas-vendido">
+      <h2>Lo más vendido</h2>
+      <div class="productos">
+        <div class="producto">
+          <a href="skincare1.html">
+            <img src="img/skincare1.png" alt="Vitamina C Bioaqua" class="producto-imagen">
+            <h3>Serum Facial</h3>
+            <p>Potencia tu rutina de cuidado facial con el Sérum Encanto.
+              Los sérums son productos de alta concentración en texturas ligeras...</p>
+            <div class="cantidad">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+              <img src="img/carritoSecciones.png" alt="carrito" class="carrito-icono">
             </div>
-        </nav>
-    </header>
+          </a>
+        </div>
 
-    <!-- Contenido principal -->
-    <main>
-        <!-- Carrusel -->
-        <section class="carousel">
-            <div class="carousel-imagenes">
-                <img src="img/carrusel4.png" alt="foto1">
-                <img src="img/carrusel1.JPG" alt="foto2">
-                <img src="img/carrusel3.JPG" alt="foto3">
+        <div class="producto">
+          <a href="labios2.html">
+            <img src="img/labios2.jpg" alt="Labial Liquido Melu" class="producto-imagen">
+            <h3>Labial Liquido Melu</h3>
+            <p>Brillo en barra que protege los labios gracias al contenido
+              de emolientes como la mantequilla de Karité que brindan una sensación suave...</p>
+            <div class="cantidad">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+              <img src="img/carritoSecciones.png" alt="carrito" class="carrito-icono">
             </div>
-            <button class="carousel-btn prev">❮</button>
-            <button class="carousel-btn next">❯</button>
-        </section>
+          </a>
+        </div>
 
-        <!-- Mensaje principal -->
-        <h2 class="animales">NO TESTEAMOS EN ANIMALES</h2>
-
-        <!-- Categorías -->
-        <section class="categorias">
-            <h2>Elige una categoría</h2>
-            <div class="categoria-lista">
-              <button class="cat-btn prev">❮</button>
-          
-              <div class="categorias-contenedor">
-                <a href="labios.html">
-                  <img src="img/labios.png" alt="Labios">
-                  <h4>Labios</h4>
-                </a>
-                <a href="ojos.html">
-                  <img src="img/ojos.png" alt="Ojos">
-                  <h4>Ojos</h4>
-                </a>
-                <a href="cejas.html">
-                  <img src="img/cejas.png" alt="Cejas">
-                  <h4>Cejas</h4>
-                </a>
-                <a href="accesorios.html">
-                  <img src="img/accesorios.png" alt="Accesorios">
-                  <h4>Accesorios</h4>
-                </a>
-                <a href="skincare.html">
-                  <img src="img/skin_care.png" alt="Skin Care">
-                  <h4>Skin Care</h4>
-                </a>
-                <a href="brochas.html">
-                  <img src="img/brochas.png" alt="Brochas">
-                  <h4>Brochas</h4>
-                </a>
-                <a href="#">
-                  <img src="img/cuidado corporal.png" alt="Cuidado Corporal">
-                  <h4>Cuidado Corporal</h4>
-                </a>
-              </div>
-          
-              <button class="cat-btn next">❯</button>
+        <div class="producto">
+          <a href="ojos1.html">
+            <img src="img/ojos1.png" alt="Delineador de Glitter" class="producto-imagen">
+            <h3>Delineador de Glitter</h3>
+            <p>¡Que nunca te falte el delineado en glitter!
+              Delineadores satinados para darles un pop de brillo a tus looks...</p>
+            <div class="cantidad">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+              <img src="img/carritoSecciones.png" alt="carrito" class="carrito-icono">
             </div>
-          </section>
-          
+          </a>
+        </div>
 
-        <!-- Productos más vendidos -->
-        <section class="mas-vendido">
-            <h2>Lo más vendido</h2>
-            <div class="productos">
-              <div class="producto">
-                <img src="img/skincare1.png" alt="Vitamina C Bioaqua" class="producto-imagen">
-                <h3>Serum Facial</h3>
-                <p>Potencia tu rutina de cuidado facial con el Sérum Encanto.
-                  Los sérums son productos de alta concentración en texturas ligeras...</p>
-                <div class="cantidad">
-                  <button>-</button>
-                  <span>1</span>
-                  <button>+</button>
-                  <img src="img/carritoSecciones.png" alt="carrito" class="carrito-icono">
-                </div>
-              </div>
-          
-              <div class="producto">
-                <img src="img/labios2.jpg" alt="Labial Liquido Melu" class="producto-imagen">
-                <h3>Labial Liquido Melu</h3>
-                <p>Brillo que protege los labios gracias al contenido
-                   de emolientes como la mantequilla de Karité brindando una sensación suave...</p>
-                <div class="cantidad">
-                  <button>-</button>
-                  <span>1</span>
-                  <button>+</button>
-                  <img src="img/carritoSecciones.png" alt="carrito" class="carrito-icono">
-                </div>
-              </div>
-
-              <div class="producto">
-                <img src="img/ojos1.png" alt="Delineador de Glitter" class="producto-imagen">
-                <h3>Delineador de Glitter</h3>
-                <p>¡Que nunca te falte el delineado en glitter! 
-                  Delineadores satinados para darles un pop de brillo a tus looks...</p>
-                <div class="cantidad">
-                  <button>-</button>
-                  <span>1</span>
-                  <button>+</button>
-                  <img src="img/carritoSecciones.png" alt="carrito" class="carrito-icono">
-                </div>
-              </div>
-
-              <div class="producto">
-                <img src="img/ojos3.png" alt="Paleta Artística Jack" class="producto-imagen">
-                <h3>Paleta Artística Jack</h3>
-                <p>¡Explota tu creatividad con la paleta más cremosa y colorida de la colección inspirada en Jack!</p>
-                <div class="cantidad">
-                  <button>-</button>
-                  <span>1</span>
-                  <button>+</button>
-                  <img src="img/carritoSecciones.png" alt="carrito" class="carrito-icono">
-                </div>
-              </div>
-
-              <div class="producto">
-                <img src="img/labios3.png" alt="Labial Matte Trendy" class="producto-imagen">
-                <h3>Labial Matte Trendy</h3>
-                <p>Labios perfectos con tu producto favorito! Es de fórmula premium y profesional. Es mate pero no transfiere no deja tus labios secos...</p>
-                <div class="cantidad">
-                  <button>-</button>
-                  <span>1</span>
-                  <button>+</button>
-                  <img src="img/carritoSecciones.png" alt="carrito" class="carrito-icono">
-                </div>
-              </div>
-
-              <div class="producto">
-                <img src="img/labios4.png" alt="Hidratante de Labios" class="producto-imagen">
-                <h3>Hidratante de Labios</h3>
-                <p>Brillo que protege los labios gracias al contenido de emolientes como la mantequilla de Karité que brindan una sensación suave...</p>
-                <div class="cantidad">
-                  <button>-</button>
-                  <span>1</span>
-                  <button>+</button>
-                  <img class="carrito" src="img/carritoSecciones.png" alt="carrito" class="carrito-icono">
-                </div>
-              </div>
+        <div class="producto">
+          <a href="ojos3.html">
+            <img src="img/ojos3.png" alt="Paleta Artística Jack" class="producto-imagen">
+            <h3>Paleta Artística Jack</h3>
+            <p>¡Explota tu creatividad con la paleta más cremosa y colorida de la colección inspirada en Jack!</p>
+            <div class="cantidad">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+              <img src="img/carritoSecciones.png" alt="carrito" class="carrito-icono">
             </div>
-          </section>
-          
-        <a href="contacto.html" class="btn-contacto">
-            <img src="img/contacto.png" alt="contacto">
-        </a>   
-    </main>
+          </a>
+        </div>
 
-    <!-- Pie de página -->
-    <footer>
-        <p>&copy; 2025 v.glow. Todos los derechos reservados.</p>
-    </footer>
+        <div class="producto">
+          <a href="labios3.html">
+            <img src="img/labios3.png" alt="Labial Matte Trendy" class="producto-imagen">
+            <h3>Labial Matte Trendy</h3>
+            <p>Labios perfectos con tu producto favorito! Es de fórmula premium y profesional. Es mate pero no
+              transfiere
+              no deja tus labios secos...</p>
+            <div class="cantidad">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+              <img src="img/carritoSecciones.png" alt="carrito" class="carrito-icono">
+            </div>
+          </a>
+        </div>
+
+        <div class="producto">
+          <a href="labios4.html">
+            <img src="img/labios4.png" alt="Hidratante de Labios" class="producto-imagen">
+            <h3>Hidratante de Labios</h3>
+            <p>Brillo en barra que protege los labios gracias al contenido de emolientes como la mantequilla de Karité
+              que
+              brindan una sensación suave...</p>
+            <div class="cantidad">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+              <img class="carrito carrito-icono" src="img/carritoSecciones.png" alt="carrito">
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <a href="contacto.html" class="btn-contacto">
+      <img src="img/contacto.png" alt="contacto">
+    </a>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 v.glow. Todos los derechos reservados.</p>
+  </footer>
 </body>
 
 </html>
