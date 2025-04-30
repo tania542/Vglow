@@ -19,6 +19,10 @@ header {
   z-index: 9999;
 }
 
+
+
+
+
 nav {
   display: flex;
   align-items: center;
@@ -78,10 +82,13 @@ input:focus {
   gap: 15px;
 }
 
-.icons img {
-  width: 60px;
-  height: 55px;
-  cursor: pointer;
+.lupa {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.carrito-icono, .login-icono {
+  font-size: 30px;
 }
 
 /*menu*/

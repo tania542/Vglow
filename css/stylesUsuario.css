@@ -88,11 +88,15 @@ nav {
 }
 
 /*imagen iconos carrito y usuario */
-.icons img {
-    width: 60px;
-    height: 55px;
-    cursor: pointer;
-}
+
+.lupa {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  
+.carrito-icono, .login-icono {
+    font-size: 30px;
+  }
 
 main {
     margin-top: 100px;
