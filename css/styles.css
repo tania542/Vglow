@@ -145,7 +145,7 @@ margin-right: 500px;
 
 /*Mensaje no testamos en animales*/
 .animales{
-    background-image: url(img/fondoAnimales.png);
+    background-image: url(../img/fondoAnimales.png);
     color: #fff;
     text-align: center;
     font-size: 2rem;
