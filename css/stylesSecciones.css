@@ -19,10 +19,6 @@ header {
   z-index: 9999;
 }
 
-
-
-
-
 nav {
   display: flex;
   align-items: center;
@@ -220,7 +216,7 @@ input:focus {
  .cantidad img {
   width: 35px;
   cursor: pointer;
-  margin-top: 15px;
+  margin-top: 6px;
  }
 
 .enlace-tarjeta {
