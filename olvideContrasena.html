@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>V.GLOW</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="icon" type="image/png" href="img/logo.png">
-    <link rel="stylesheet" href="stylesUsuario.css">
+    <link rel="stylesheet" href="css/stylesUsuario.css">
 </head>
 
 <body>
@@ -20,28 +21,30 @@
             <form action="#" method="get" class="buscar">
                 <input type="text" name="search" placeholder="Escribe tu búsqueda...">
                 <button type="submit">
-                    <img src="img/lupa.png" alt="Buscar" style="width: 30px; height: 30px;">
+                    <i class="fa-solid fa-magnifying-glass lupa" style="color: #ffffff;"></i>
                 </button>
             </form>
             <div class="icons">
-                <img src="img/carrito.png" alt="carrito">
-                <img src="img/usuario.png" alt="usuario">
+                <a href="carrito.html"><i class="fa-solid fa-cart-shopping carrito-icono"
+                        style="color: #ffffff;"></i></a>
+                <a href="loguin.html"><i class="fa-solid fa-circle-user login-icono" style="color: #ffffff;"></i></a>
             </div>
         </nav>
     </header>
+    <main>
+        <section class="contendor-login">
+            <div class="formulario">
+                <h1>¿Olvidaste tu contraseña?</h1>
+                <p>Ingresa tu correo electrónico para enviarte un enlace y puedas recuperar tu nueva contraseña</p><br>
+                <form>
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" required>
 
-    <section class="usuario-container">
-        <div class="usuario-form">
-            <h1>¿Olvidaste tu contraseña?</h1>
-            <p>Ingresa tu correo electrónico para enviarte un enlace y puedas recuperar tu nueva contraseña</p><br>
-            <form>
-                <label for="correo">Correo Electrónico</label>
-                <input type="email" id="correo" required>
-            
-                <button type="submit" class="btn password">Restablecer Contraseña</button>
-            </form>
-        </div>
-    </section>
+                    <button type="submit" class="botonac">Restablecer Contraseña</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <!-- Pie de página -->
     <footer>
