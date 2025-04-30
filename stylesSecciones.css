@@ -66,7 +66,7 @@ input:focus {
 .buscar button {
   padding: 0;
   border: none;
-  background-color: #e4bdff;
+  background-color: #e9cbe0;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -232,6 +232,8 @@ input:focus {
   transition: transform 0.3s, background-color 0.3s;
   justify-content: center;
   align-items: center;
+  width: 50px;
+  height: 50px;
 }
 
 .btn-contacto img {
@@ -240,7 +242,7 @@ input:focus {
 }
 
 .btn-contacto:hover{
-  background-color: #e9cbe0;
+  background-color: #e4bdff;
   transform: scale(1.1);
 }
 footer {

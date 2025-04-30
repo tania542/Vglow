@@ -8,10 +8,13 @@
 body {
     font-family: "Chau Philomene One", sans-serif;
     font-style: italic;
+    background-color: #fff0f7;
   }
 /*encabezado*/
   header {
     width: 100%;
+    top: 0;
+    left: 0;
     padding: 10px;
     position: fixed;
     background: #e9cbe0;
@@ -41,12 +44,13 @@ nav {
 .logo h1{
     font-size: 2rem;
 }
+
 /**/
 .buscar {
-    display: flex;
-    flex: 1;
-    max-width: 400px;
-    margin: 0 auto;
+  display: flex;
+  flex: 1;
+  max-width: 400px;
+  margin-right: 500px;
 }
 /*texto barra buscar*/
 .buscar input {
@@ -61,7 +65,7 @@ nav {
 .buscar button {
     padding: 0;
     border: none;
-    background-color: #e4bdff;
+    background-color: #e9cbe0;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -78,6 +82,8 @@ nav {
     height: 55px;
     cursor: pointer;
 }
+
+
 /*menu*/
 .menu {
     width: 100%;
@@ -106,11 +112,12 @@ nav {
 }
 /*seccion*/
 .productos {
-    text-align: center;
-    padding: 100px 20px 20px;
-    background-color: #ffe4f2;
-    font-size: 2.5rem;
-    color: #d78ca6;
+  text-align: center;
+  padding: 100px 20px 20px;
+  background-color: #ffe4f2;
+  font-size: 2.5rem;
+  color: #d78ca6;
+
 }
 /*main*/
 .producto {
@@ -226,6 +233,8 @@ nav {
   transition: transform 0.3s, background-color 0.3s;
   justify-content: center;
   align-items: center;
+  width: 50px;
+  height: 50px;
 }
 
 .btn-contacto img {
@@ -237,6 +246,18 @@ nav {
   background-color: #e9cbe0;
   transform: scale(1.1);
 }
+footer {
+  background-color: #e9cbe0;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 15px;
+  }
+  
+  footer p {
+  margin: p;
+  }
 
 /* Responsivo*/
 @media (max-width: 768px) {
@@ -347,5 +368,3 @@ nav {
   align-items: center;
   }
 }
-
-

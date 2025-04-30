@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carrito</title>
+
+    <link rel="stylesheet" href="stylescarrito.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="logo">
+                <h1>VGlow</h1>
+            </a>
+            <form action="#" method="get" class="buscar">
+                <input type="text" name="search" placeholder="Escribe tu búsqueda...">
+                <button type="submit">
+                    <img src="img/lupa.png" alt="Buscar" style="width: 30px; height: 30px;">
+                </button>
+            </form>
+            <div class="icons">
+                <a href="carrito.html"><img src="img/carrito.png" alt="carrito"></a>
+                <a href="loguin.html"><img src="img/usuario.png" alt="usuario"></a>
+            </div>
+        </nav>
+    </header>
+
+    <nav class="menu">
+        <a href="labios.html">Labios</a>
+        <a href="ojos.html">Ojos</a>
+        <a href="cejas.html">Cejas</a>
+        <a href="accesorios.html">Accesorios</a>
+        <a href="skincare.html">Skin Care</a>
+        <a href="brochas.html">Brochas</a>
+        <a href="miniglowlovers.html">MiniGlowlovers</a>
+        <a href="cuidadocorporal.html">Cuidado corporal</a>
+        <a href="cuidadocapilar.html">Cuidado capilar</a>
+    </nav>
+
+    <main>
+        <section class="carrito">
+            <article class="producto">
+                <img src="img/acce1.png" alt="Labial">
+                <div class="detalles">
+                    <h2>Espejo Corazón</h2>
+                    <p>Precio: $15.000</p>
+                    <label>Cantidad:
+                        <input type="number" value="1" min="1">
+                    </label>
+                </div>
+                <button class="eliminar">❌</button>
+            </article>
+
+            <article class="producto">
+                <img src="img/glow3.png" alt="Base">
+                <div class="detalles">
+                    <h2>Brillo De Labios Aura</h2>
+                    <p>Precio: $20.000</p>
+                    <label>Cantidad:
+                        <input type="number" value="2" min="1">
+                    </label>
+                </div>
+                <button class="eliminar">❌</button>
+            </article>
+
+            <div class="resumen">
+                <h3>Total: $35.000</h3>
+                <button class="pagar">Proceder al pago</button>
+            </div>
+        </section>
+        <div class="volver-contenedor">
+            <button class="volver" onclick="window.history.back()">← Volver</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 v.glow. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

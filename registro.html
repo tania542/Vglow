@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V.GLOW</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="stylesUsuario.css">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="logo">
+                <h1>Vglow</h1>
+            </a>
+            <form action="#" method="get" class="buscar">
+                <input type="text" name="search" placeholder="Escribe tu búsqueda...">
+                <button type="submit">
+                    <img src="img/lupa.png" alt="Buscar" style="width: 30px; height: 30px;">
+                </button>
+            </form>
+            <div class="icons">
+                <a href="carrito.html"><img src="img/carrito.png" alt="carrito"></a>
+                <a href="loguin.html"><img src="img/usuario.png" alt="usuario"></a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="usuario-container">
+        <div class="usuario-form">
+            <div class="buttons">
+                <a href="login.html">
+                    <button class="btn">Acceder</button>
+                </a>
+                <a href="registro.html">
+                    <button class="btn active">Registrarse</button>
+                </a>
+            </div>
+            <h1>Registrarse</h1>
+            <form>
+                <label for="usuario">Nombre de Usuario</label>
+                <input type="text" id="usuario" required>
+                
+                <label for="correo">Correo Electrónico</label>
+                <input type="email" id="correo" required>
+                
+                <label for="contrasena">Contraseña</label>
+                <div class="password-container">
+                    <input type="password" id="contrasena" required>
+                    <span class="toggle-password">👁</span>
+                </div>
+                
+                <button type="submit" class="btn registro">Registrarse</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 v.glow. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

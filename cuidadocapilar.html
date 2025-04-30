@@ -1,39 +1,142 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>VGlow - Labios</title>
+    <link rel="stylesheet" href="stylesSecciones.css">
 </head>
+
 <body>
     <!-- Encabezado -->
     <header>
-        <div>
-            <a href="index.html">
+        <nav>
+            <a href="index.html" class="logo">
                 <img src="img/logo.png" alt="logo">
-                <h1>v.glow</h1>
+                <h1>VGlow</h1>
             </a>
-            <form action="#" method="get">
+            <form action="#" method="get" class="buscar">
                 <input type="text" name="search" placeholder="Escribe tu búsqueda...">
-                <button type="submit">Buscar</button>
+                <button type="submit">
+                    <img src="img/lupa.png" alt="Buscar" style="width: 30px; height: 30px;">
+                </button>
             </form>
-            <img src="img/carrito.png" alt="carrito">
-            <img src="img/usuario.png" alt="usuario">
-        </div>
+            <div class="icons">
+                <a href="carrito.html"><img src="img/carrito.png" alt="carrito"></a>
+                <a href="loguin.html"><img src="img/usuario.png" alt="usuario"></a>
+            </div>
+        </nav>
     </header>
 
-    <body>
-        <nav>
-            <a href="labios.html">Labios</a>
-            <a href="ojos.html">Ojos</a>
-            <a href="cejas.html">Cejas</a>
-            <a href="accesorios.html">Accesorios</a>
-            <a href="skincare.html">Skin Care</a>
-            <a href="brochas.html">Brochas</a>
-            <a href="miniglowlovers.html">MiniGlowlovers</a>
-            <a href="cuidadocorporal.html">Cuidado corporal</a>
-            <a href="cuidadocorporal.html">Cuidado capilar</a>
-        </nav>
-    </body>
+    <!-- Menú -->
+    <nav class="menu">
+        <a href="labios.html">Labios</a>
+        <a href="ojos.html">Ojos</a>
+        <a href="cejas.html">Cejas</a>
+        <a href="accesorios.html">Accesorios</a>
+        <a href="skincare.html">Skin Care</a>
+        <a href="brochas.html">Brochas</a>
+        <a href="miniglowlovers.html">MiniGlowlovers</a>
+        <a href="cuidadocorporal.html">Cuidado corporal</a>
+        <a href="cuidadocapilar.html">Cuidado capilar</a>
+    </nav>
+
+    <!-- Sección principal -->
+    <section class="productos">
+        <h1>Cuidado Capilar</h1>
+    </section>
+
+    <section class="contenedor-productos">
+        <div class="tarjeta-producto">
+            <div class="imagenes">
+                <a href="cuidadocapilar1.html" class="enlace-tarjeta">
+                    <img src="img/capilar1.png" alt="Tónico Capilar Crecimiento">
+            </div>
+            <div class="info-producto">
+                <h2>Tónico Capilar Crecimiento</h2>
+                <p>¡Ayuda a tu cabello a crecer con nuestro nuevo tónico! Acelera y promueve el crecimiento de tu cabello de forma natural y además con una...</p>
+                <div class="cantidad">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                    <img class="carrito" src="img/carritoSecciones.png" alt="carrito" class="carrito-icono">
+                </div>
+            </div>
+            </a>
+        </div>
+
+        <div class="tarjeta-producto">
+            <div class="imagenes">
+                <a href="cuidadocapilar2.html" class="enlace-tarjeta">
+                    <img src="img/capilar2.png" alt="Tónico Capilar Control Grasa">
+            </div>
+            <div class="info-producto">
+                <h2>Tónico Capilar Control Grasa</h2>
+                <p>¡Elimina progresivamente la grasa de tu cabello! Si sufres de cuero cabelludo graso, este producto se convertirá en un must en tu...
+                </p>
+
+                <div class="cantidad">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                    <img class="carrito" src="img/carritoSecciones.png" alt="carrito" class="carrito-icono">
+                </div>
+            </div>
+            </a>
+        </div>
+
+        <div class="tarjeta-producto">
+            <div class="imagenes">
+                <a href="cuidadocapilar3.html" class="enlace-tarjeta">
+                    <img src="img/capilar3.png" alt="Primer de Pelo Termoprotector">
+            </div>
+            <div class="info-producto">
+                <h2>Primer de Pelo Termoprotector</h2>
+                <p>¡El Primer Termoprotector Mandarinna es el mismo de siempre, únicamente cambió su presentación, ¡ahora es verde!...</p>
+
+                <div class="cantidad">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                    <img class="carrito" src="img/carritoSecciones.png" alt="carrito" class="carrito-icono">
+                </div>
+            </div>
+            </a>
+        </div>
+
+
+        <div class="tarjeta-producto">
+            <div class="imagenes">
+                <a href="cuidadocapilar4.html" class="enlace-tarjeta">
+                    <img src="img/capilar4.png" alt="Fijador de Cabello">
+            </div>
+            <div class="info-producto">
+                <h2>Fijador de Cabelloy</h2>
+                <p>¡El Fijador Fix Mandarinna es el mismo de siempre, únicamente cambió su presentación, ahora es rosado! Spray para cabello de fijación...
+                </p>
+
+                <div class="cantidad">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                    <img class="carrito" src="img/carritoSecciones.png" alt="carrito" class="carrito-icono">
+                </div>
+
+            </div>
+            </a>
+        </div>
+    </section>
+
+        <a href="contacto.html" class="btn-contacto">
+            <img src="img/contacto.png" alt="contacto">
+        </a> 
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 v.glow. Todos los derechos reservados.</p>
+    </footer>
 
 </body>
+
 </html>
