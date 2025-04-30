@@ -261,7 +261,7 @@ footer {
   }
   
   footer p {
-  margin: p;
+  margin: 0;
   }
 
 /* Responsivo*/
@@ -369,7 +369,7 @@ footer {
   }
   .imagenes {
     display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
   }
 }

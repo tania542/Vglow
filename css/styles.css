@@ -7,7 +7,7 @@
 }
 body {
     font-family: "Chau Philomene One", sans-serif;
-    font-weight: 400px;
+    font-weight: 400;
     font-style: italic;
     background-color: #ffe4f2;
     padding-top: 40px;
@@ -348,7 +348,7 @@ margin-right: 500px;
  }
 
  footer p {
-  margin: p;
+  margin: 0;
  }
 
 /* Responsivo*/
