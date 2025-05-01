@@ -2,8 +2,8 @@
 
 * {
     margin: 0;/*eliminar la margen por defecto*/
-    padding: 0;
-    box-sizing: border-box;
+    padding: 0;/**/
+    box-sizing: border-box;/**/
 }
 body {
     font-family: "Chau Philomene One", sans-serif;
@@ -263,21 +263,6 @@ footer {
   footer p {
   margin: 0;
   }
-
-footer {
-  background-color: #e9cbe0;
-  color: #333;
-  text-align: center;
-  font-size: 0.9rem;
-  margin-top: 15px;
-  width: 100%;
-  padding: 10px;
-  margin: 0;
- }
-
- footer p {
-  margin: p;
- }
 
 /* Responsivo*/
 @media (max-width: 768px) {
