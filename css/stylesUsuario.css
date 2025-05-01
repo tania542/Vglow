@@ -208,6 +208,29 @@ footer {
     footer p {
     margin: 0;
     }
+    .btn-contacto {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 99;
+        border-radius: 50%;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        transition: transform 0.3s, background-color 0.3s;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+      }
+      
+      .btn-contacto img {
+        width: 50px;
+        height: 50px;
+      }
+      
+      .btn-contacto:hover{
+        background-color: #e9cbe0;
+        transform: scale(1.1);
+      }
 
 /* RESPONSIVE DESIGN */
 
