@@ -36,11 +36,15 @@
             <div class="formulario">
                 <h1>¿Olvidaste tu contraseña?</h1>
                 <p>Ingresa tu correo electrónico para enviarte un enlace y puedas recuperar tu nueva contraseña</p><br>
-                <form>
-                    <label for="correo">Correo Electrónico</label>
-                    <input type="email" id="correo" required>
+                <form id="form-recuperar">
+                    <label for="correo-recuperar">Correo Electrónico</label>
+                    <input type="email" id="correo-recuperar" required>
+
+                    <span id="error-correo-recuperar" class="error-message"></span>
+                    <span id="exito-recuperar" class="success-message"></span>
 
                     <button type="submit" class="botonac">Restablecer Contraseña</button>
+                
                 </form>
             </div>
         </section>
@@ -53,6 +57,7 @@
     <footer>
         <p>&copy; 2025 v.glow. Todos los derechos reservados.</p>
     </footer>
-</body>
 
+    <script src="js/scriptUsuario.js"></script>
+</body>
 </html>

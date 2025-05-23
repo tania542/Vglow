@@ -78,9 +78,11 @@ document.querySelector('.buscar').addEventListener('submit', function (e) {
 // -------------------------
 // Mensaje al agregar al carrito
 // -------------------------
-document.querySelectorAll('.carrito-icono').forEach(icono => {
+
+document.querySelectorAll('.agregar-carrito').forEach(icono => {
   icono.addEventListener('click', function (e) {
     e.preventDefault();
     alert('Producto agregado al carrito 🛒');
   });
 });
+

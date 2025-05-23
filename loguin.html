@@ -38,16 +38,18 @@
                     <a href="registro.html"><button class="boton">Registrarse</button> </a>
                 </div>
                 <h1>Acceder</h1>
-                <form>
+                <form id="form-login">
                     <label for="correo">Correo Electrónico</label>
                     <input type="email" id="correo" required>
+                    <small class="error-message" id="error-correo"></small>
 
                     <label for="contrasena">Contraseña</label>
                     <div class="password-container">
                         <input type="password" id="contrasena" required>
-                        <span class="toggle-password">👁</span>
+                        <span class="toggle-password mostrar-contrasena">🙈</span>
                     </div>
-                    <a href="olvideContrasena.html">¿Olvidaste tu contraseña?</a>
+                        <p class="error-message" id="error-contrasena"></p>
+                        <a href="olvideContrasena.html">¿Olvidaste tu contraseña?</a>
                     <div>
                     <button type="submit" class="botonac">Acceder</button>
                     </div>
@@ -64,6 +66,8 @@
     <footer>
         <p>&copy; 2025 v.glow. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="js/scriptUsuario.js"></script>
 </body>
 
 </html>

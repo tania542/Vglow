@@ -153,6 +153,8 @@ label {
     margin-bottom: 5px;
     color: black;
 }
+
+input[type="text"],
 input[type="email"],
 input[type="password"] {
     padding: 10px;
@@ -166,6 +168,18 @@ input[type="password"] {
 .password-container {
     position: relative;
 }
+
+.password-container input {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .toggle-password {
     position: absolute;
     right: 10px;
@@ -231,6 +245,32 @@ footer {
         background-color: #e9cbe0;
         transform: scale(1.1);
       }
+
+     .error-message {
+        display: block;  /* Hace que ocupe toda la línea */
+        color: red;
+        font-size: 0.9rem;
+        margin-top: 4px;
+        margin-bottom: 8px; /* Para separar del enlace */
+      }   
+
+      .mensaje {
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        display: none;
+        }
+
+        .mensaje.exito {
+        background-color: #d4edda;
+        color: #155724;
+        }
+
+        .mensaje.error {
+        background-color: #f8d7da;
+        color: #721c24;
+        }
+
 
 /* RESPONSIVE DESIGN */
 
