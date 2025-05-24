@@ -111,6 +111,7 @@ main {
 }
 
 .formulario {
+    position: relative;
     background-color: white;
     padding: 30px 40px;
     border-radius: 20px;
@@ -118,6 +119,18 @@ main {
     text-align: center;
     width: 100%;
     max-width: 400px;
+}
+
+.volver-login {
+  position: absolute;
+  bottom: 8px;
+  right: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.volver-login:hover {
+  transform: scale(1.1);
 }
 
 .botones {
