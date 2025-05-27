@@ -2,89 +2,95 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>carrito</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>carrito</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="icon" type="image/png" href="img/logo.png">
-    <link rel="stylesheet" href="css/stylescarrito.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="stylesheet" href="css/stylescarrito.css">
 </head>
 
 <body>
   <!-- Encabezado -->
-    <header>
-        <nav>
-            <a href="index.html" class="logo">
-                <img src="img/logo.png" alt="logo">
-                <h1>Vglow</h1>
-            </a>
-            <form action="#" method="get" class="buscar">
-                <input type="text" name="search" placeholder="Escribe tu búsqueda...">
-                <button type="submit">
-                <i class="fa-solid fa-magnifying-glass lupa" style="color: #ffffff;" ></i>
-                </button>
-            </form>
-            <div class="icons">
-                <a href="carrito.html"><i class="fa-solid fa-cart-shopping carrito-icono" style="color: #ffffff;"></i></a>
-                <a href="loguin.html"><i class="fa-solid fa-circle-user login-icono" style="color: #ffffff;"></i></a>
-            </div>
-        </nav>
-     </header>
-
-    <nav class="menu">
-        <a href="labios.html">Labios</a>
-        <a href="ojos.html">Ojos</a>
-        <a href="cejas.html">Cejas</a>
-        <a href="accesorios.html">Accesorios</a>
-        <a href="skincare.html">Skin Care</a>
-        <a href="brochas.html">Brochas</a>
-        <a href="miniglowlovers.html">MiniGlowlovers</a>
-        <a href="cuidadocorporal.html">Cuidado corporal</a>
-        <a href="cuidadocapilar.html">Cuidado capilar</a>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="logo">
+        <h1>Vglow</h1>
+      </a>
+      <form action="#" method="get" class="buscar">
+        <input type="text" name="search" placeholder="Escribe tu búsqueda...">
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass lupa" style="color: #ffffff;"></i>
+        </button>
+      </form>
+      <div class="icons">
+        <a href="carrito.html"><i class="fa-solid fa-cart-shopping carrito-icono" style="color: #ffffff;"></i></a>
+        <a href="loguin.html"><i class="fa-solid fa-circle-user login-icono" style="color: #ffffff;"></i></a>
+      </div>
     </nav>
+  </header>
 
-    <main>
-        <section class="carrito">
-            <article class="producto">
-                <img src="img/acce1.png" alt="Labial">
-                <div class="detalles">
-                    <h2>Espejo Corazón</h2>
-                    <p>Precio: $15.000</p>
-                    <label>Cantidad:
-                        <input type="number" value="1" min="1">
-                    </label>
-                </div>
-                <button class="eliminar">❌</button>
-            </article>
+  <nav class="menu">
+    <a href="labios.html">Labios</a>
+    <a href="ojos.html">Ojos</a>
+    <a href="cejas.html">Cejas</a>
+    <a href="accesorios.html">Accesorios</a>
+    <a href="skincare.html">Skin Care</a>
+    <a href="brochas.html">Brochas</a>
+    <a href="miniglowlovers.html">MiniGlowlovers</a>
+    <a href="cuidadocorporal.html">Cuidado corporal</a>
+    <a href="cuidadocapilar.html">Cuidado capilar</a>
+  </nav>
 
-            <article class="producto">
-                <img src="img/glow3.png" alt="Base">
-                <div class="detalles">
-                    <h2>Brillo De Labios Aura</h2>
-                    <p>Precio: $20.000</p>
-                    <label>Cantidad:
-                        <input type="number" value="2" min="1">
-                    </label>
-                </div>
-                <button class="eliminar">❌</button>
-            </article>
-
-            <div class="resumen">
-                <h3>Total: $35.000</h3>
-                <button class="pagar">Proceder al pago</button>
-            </div>
-        </section>
-        <div class="volver-contenedor">
-            <button class="volver" onclick="window.history.back()">← Volver</button>
+  <main>
+    <section class="carrito">
+      <article class="producto">
+        <img src="img/acce1.png" alt="Labial">
+        <div class="detalles">
+          <h2>Espejo Corazón</h2>
+          <p class="precio">15000</p>
+          <label>Cantidad:
+            <input type="number" class="cantidad" value="1" min="1">
+          </label>
         </div>
-        <a href="contacto.html" class="btn-contacto">
-            <img src="img/contacto.png" alt="contacto">
-        </a> 
-    </main>
-    <footer>
-        <p>&copy; 2025 v.glow. Todos los derechos reservados.</p>
-    </footer>
+        <button class="eliminar">❌</button>
+      </article>
+
+      <article class="producto">
+        <img src="img/glow3.png" alt="Base">
+        <div class="detalles">
+          <h2>Brillo De Labios Aura</h2>
+          <p class="precio">20000</p>
+          <label>Cantidad:
+            <input type="number" class="cantidad" value="2" min="1">
+          </label>
+        </div>
+        <button class="eliminar">❌</button>
+      </article>
+
+      <div class="resumen">
+        <h3 id="total">Total: $0</h3>
+        <button class="pagar">Proceder al pago</button>
+      </div>
+    </section>
+
+    <div class="volver-contenedor">
+      <button class="volver" onclick="window.history.back()">← Volver</button>
+    </div>
+
+    <a href="contacto.html" class="btn-contacto">
+      <img src="img/contacto.png" alt="contacto">
+    </a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 v.glow. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/carrito.js" defer></script>
+
 </body>
 
 </html>
