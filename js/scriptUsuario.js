@@ -117,13 +117,9 @@ if (formRegister) {
     // Si no hay errores, mostrar alerta de éxito (simulado)
     if (!hayError) {
       alert('Registro exitoso 🎉');
-      // Aquí podrías enviar los datos a un servidor o guardar en almacenamiento local
-      // formRegister.submit(); // En caso de que quieras que se envíe el formulario normalmente
     }
   });
 }
-
-
 
 // Verificamos que el formulario exista en la página
 const formRecuperar = document.getElementById('form-recuperar');

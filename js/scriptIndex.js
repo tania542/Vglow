@@ -47,7 +47,6 @@ document.querySelectorAll('.producto').forEach(producto => {
   });
 });
 
-
 // -------------------------
 // Desplazamiento de categorías (horizontal)
 // -------------------------
