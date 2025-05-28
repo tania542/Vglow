@@ -75,23 +75,29 @@ db.connect(err => {
 
 // Ruta para recibir el formulario
 app.post('/enviar-contacto', (req, res) => {
-  const { name, phone, email, message } = req.body;
+  const { name, phone, email, message } = req.body; // Extrae los datos enviados en el cuerpo de la solicitud
 
-  // Validar que los datos existan 
+  // Validación: si alguno de los campos está vacío, devuelve error 400 (solicitud incorrecta)
   if (!name || !phone || !email || !message) {
     return res.status(400).json({ message: 'Todos los campos son obligatorios.' });
   }
 
+  // Consulta SQL para insertar los datos en la tabla "contacto"
   const sql = 'INSERT INTO contacto (nombre, numero, correo, mensaje) VALUES (?, ?, ?, ?)';
+  
+  // Ejecuta la consulta con los valores enviados
   db.query(sql, [name, phone, email, message], (err, result) => {
+    // Si ocurre un error al guardar los datos, muestra un mensaje de error y responde con estado 500
     if (err) {
       console.error('Error al insertar contacto:', err);
       return res.status(500).json({ message: 'Error al guardar los datos.' });
     }
+    // Si todo sale bien, responde con estado 200 y un mensaje de éxito
     res.status(200).json({ message: 'Mensaje enviado correctamente.' });
   });
 });
 
+// Inicia el servidor y lo pone a trabajar en el puerto definido
 app.listen(port, () => {
   console.log(`Servidor corriendo en http://localhost:${port}`);
 });

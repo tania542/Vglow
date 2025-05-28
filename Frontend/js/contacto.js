@@ -47,21 +47,25 @@ document.querySelector('.contact-form form').addEventListener('submit', async fu
 
     // Si pasa todas las validaciones, enviar datos por fetch
     try {
+        // Realiza una solicitud HTTP POST a la ruta del servidor
         const response = await fetch('http://localhost:3000/enviar-contacto', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ name, phone, email, message })
+            method: 'POST', // Método de envío
+            headers: { 'Content-Type': 'application/json' }, // Indica que se está enviando JSON
+            body: JSON.stringify({ name, phone, email, message }) // Convierte los datos a formato JSON y los envía
         });
 
+        // Espera y convierte la respuesta del servidor a objeto JSON
         const result = await response.json();
 
+        // Muestra el mensaje devuelto por el servidor
         alert(result.message);
 
         if (response.ok) {
             this.reset();  // Limpia formulario
         }
     } catch (error) {
+        // En caso de error en la solicitud, muestra un mensaje de error
         alert('Hubo un error al enviar el formulario.');
-        console.error(error);
+        console.error(error);// Muestra el error en la consola del navegador
     }
 });
